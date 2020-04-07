@@ -4,6 +4,12 @@
     <title>first-text</title>
     <url>/2020/04/05/first-text/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>测试文章</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
