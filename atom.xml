@@ -45,11 +45,11 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
+    <title>你好，访客</title>
     <link href="http://yoursite.com/2020/04/05/hello-world/"/>
     <id>http://yoursite.com/2020/04/05/hello-world/</id>
     <published>2020-04-05T12:45:05.947Z</published>
-    <updated>2020-04-05T12:45:05.947Z</updated>
+    <updated>2020-04-08T03:35:20.956Z</updated>
     
     <summary type="html">
     
@@ -57,13 +57,18 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;p&gt;创建这个博客算是跟风的吧，不过我确实想有一个平台可以自己有个性化的形式写教程写文章什么什么的，所以就花了好大力气创建了这个博客。&lt;/p&gt;
+&lt;h2 id=&quot;索引&quot;&gt;&lt;a href=&quot;#索引&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
     
+      <category term="索引" scheme="http://yoursite.com/categories/%E7%B4%A2%E5%BC%95/"/>
+    
+    
+      <category term="索引" scheme="http://yoursite.com/tags/%E7%B4%A2%E5%BC%95/"/>
     
   </entry>
   

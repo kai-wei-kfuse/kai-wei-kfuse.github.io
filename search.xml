@@ -13,21 +13,22 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
+    <title>你好，访客</title>
     <url>/2020/04/05/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<p>创建这个博客算是跟风的吧，不过我确实想有一个平台可以自己有个性化的形式写教程写文章什么什么的，所以就花了好大力气创建了这个博客。</p>
+<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><h3 id="博客有什么内容？"><a href="#博客有什么内容？" class="headerlink" title="博客有什么内容？"></a>博客有什么内容？</h3><p>目前的计划：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo+github个人博客创建及美化</span><br><span class="line">泰拉瑞亚全流程攻略</span><br><span class="line">魔方教程与魔方测评</span><br><span class="line">我家的猫</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="其他平台"><a href="#其他平台" class="headerlink" title="其他平台"></a>其他平台</h3><p>哔哩哔哩: <a href="https://space.bilibili.com/403228491" target="_blank" rel="noopener">kai_wei凯惟</a></p>
+<h3 id="交流"><a href="#交流" class="headerlink" title="交流"></a>交流</h3><p>QQ:1171113925<br>欢迎骚扰O(∩_∩)O</p>
+<h3 id="打赏（未完工）"><a href="#打赏（未完工）" class="headerlink" title="打赏（未完工）"></a>打赏（未完工）</h3><p>马上就来</p>
 ]]></content>
+      <categories>
+        <category>索引</category>
+      </categories>
+      <tags>
+        <tag>索引</tag>
+      </tags>
   </entry>
 </search>
