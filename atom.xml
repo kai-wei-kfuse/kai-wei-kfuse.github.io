@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-13T02:05:19.604Z</updated>
+  <updated>2020-04-14T08:28:07.011Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win10 U盘装机法</title>
+    <link href="http://yoursite.com/2020/04/13/win10/"/>
+    <id>http://yoursite.com/2020/04/13/win10/</id>
+    <published>2020-04-13T02:34:19.000Z</published>
+    <updated>2020-04-14T08:28:07.011Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;装机教程-Windows-10-U盘装机&quot;&gt;&lt;a href=&quot;#装机教程-Windows-10-U盘装机&quot; class=&quot;headerlink&quot; title=&quot;#装机教程# Windows 10 U盘装机&quot;&gt;&lt;/a&gt;#装机教程# Windows 10
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="系统相关" scheme="http://yoursite.com/tags/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>泰拉瑞亚模组冲突如何解决</title>

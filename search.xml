@@ -53,4 +53,45 @@
         <tag>泰拉瑞亚</tag>
       </tags>
   </entry>
+  <entry>
+    <title>win10 U盘装机法</title>
+    <url>/2020/04/13/win10/</url>
+    <content><![CDATA[<h1 id="装机教程-Windows-10-U盘装机"><a href="#装机教程-Windows-10-U盘装机" class="headerlink" title="#装机教程# Windows 10 U盘装机"></a>#装机教程# Windows 10 U盘装机</h1><p>windows 10目前越来越普及，目前（2020年）win 10用户已经超过了win7，如下图（这张图是一年前的，很旧了，现在肯定不止这个数据）<br><img src="https://s1.ax1x.com/2020/04/13/Gjd6G6.png" alt="Gjd6G6.png"><br>而且微软官方已经停止了对win 7的支持。</p>
+<h4 id="所以，windows-10-大势所趋，还不赶紧装个win10玩玩？"><a href="#所以，windows-10-大势所趋，还不赶紧装个win10玩玩？" class="headerlink" title="所以，windows 10 大势所趋，还不赶紧装个win10玩玩？"></a>所以，windows 10 大势所趋，还不赶紧装个win10玩玩？</h4><h4 id="问题来了：怎么装个win10？"><a href="#问题来了：怎么装个win10？" class="headerlink" title="问题来了：怎么装个win10？"></a>问题来了：怎么装个win10？</h4><p>不急，下面告诉你</p>
+<h2 id="1-什么是U盘装机？适用于什么情况？"><a href="#1-什么是U盘装机？适用于什么情况？" class="headerlink" title="1.什么是U盘装机？适用于什么情况？"></a>1.什么是U盘装机？适用于什么情况？</h2><p>U盘装机就是用一个 <strong>在U盘里的小系统</strong> （即win PE系统）把你要装的系统安装在主机上 的方法，他是个万能的方法，没有什么限制，如果你的电脑是一台<strong>新的电脑</strong>（里面没有系统），那么就可以用这个方法，只要有个<strong>U盘</strong>就行。如果是win7升级win10也可以用这个方法。<br>注意的是，你的C盘（系统盘）需要格式化，这里提醒一下，格式化后面再说。</p>
+<blockquote>
+<p>想知道你适用于哪种装机方法的可以看这里-&gt;（链接）</p>
+</blockquote>
+<h2 id="2-准备工作"><a href="#2-准备工作" class="headerlink" title="2.准备工作"></a>2.准备工作</h2><p>这里要准备一个硬件和一个工具和一个系统镜像。</p>
+<blockquote>
+<p>① 一个<strong>空U盘</strong>，大小4G以上（win PE大概占2G）<br>如果没有空U盘也可以把U盘内文件备份一次（就复制出来）</p>
+</blockquote>
+<p><strong>装PE会格式化U盘！！！</strong></p>
+<blockquote>
+<p>② 下载winPE可以百度搜win pe 或者 点这里<a href="http://www.wepe.com.cn/" target="_blank" rel="noopener">http://www.wepe.com.cn/</a>在官网下</p>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2020/04/13/Gv58SO.png" alt="Gv58SO.png"></p>
+<blockquote>
+<p>③ 下载win10镜像（镜像就是一个用来安装系统文件）在MSDN下载<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">https://msdn.itellyou.cn/</a>如图，操作系统&gt;win10&gt;选择版本&gt;详细信息&gt;复制链接</p>
+</blockquote>
+<pre><code>注意！x64：64位系统 x86：32位系统
+business：商业版（也就是专业版）
+consumer：消费者版（也就是普通版）</code></pre><p><img src="https://s1.ax1x.com/2020/04/13/GvojSK.png" alt="GvojSK.png"></p>
+<h2 id="3-第一步：安装winPE进U盘里"><a href="#3-第一步：安装winPE进U盘里" class="headerlink" title="3.第一步：安装winPE进U盘里"></a>3.第一步：安装winPE进U盘里</h2><h4 id="什么是winPE？"><a href="#什么是winPE？" class="headerlink" title="什么是winPE？"></a>什么是winPE？</h4><p>win PE就是专门用来装系统的系统，也就是预装系统的系统，它是一种系统预装环境和工具。</p>
+<p><img src="https://s1.ax1x.com/2020/04/13/GvWdRe.png" alt="GvWdRe.png"></p>
+<p>打开安装到U盘（右下）<br><img src="https://s1.ax1x.com/2020/04/13/GvfJyj.png" alt="GvfJyj.png"></p>
+<p>注意待写入U盘是不是那个空U盘<br><img src="https://s1.ax1x.com/2020/04/13/GvhMu9.png" alt="GvhMu9.png"></p>
+<p>然后就点安装，等它完成。（安装的时候你会发现你不能打开U盘）</p>
+<p>然后你会发现你的U盘容量变小了，这部分就是PE系统占了。这样你的U盘就能恢复平常正常使用了，不过我推荐还是有一个专门的装机盘会好一点（几十块一个U盘够用好多年呢）。</p>
+<h2 id="4-第二步：把你下载的系统镜像放入U盘"><a href="#4-第二步：把你下载的系统镜像放入U盘" class="headerlink" title="4.第二步：把你下载的系统镜像放入U盘"></a>4.第二步：把你下载的系统镜像放入U盘</h2><p>方便在pe系统内找到你下的镜像，这个写着10的长的要死的就是镜像文件，图标上有个光盘的样子。<br><img src="https://s1.ax1x.com/2020/04/13/GvbLHe.png" alt="GvbLHe.png"></p>
+<h2 id="5-第三步：重启电脑，设置U盘启动"><a href="#5-第三步：重启电脑，设置U盘启动" class="headerlink" title="5.第三步：重启电脑，设置U盘启动"></a>5.第三步：重启电脑，设置U盘启动</h2><p>重启电脑，在显示主板牌子的时候按F8（不同品牌的按键不一定一样，有的F12或者F11，一般<strong>屏幕底部会显示</strong>）进入BIOS，这里建议百度如何进入BIOS。<br><img src="https://s1.ax1x.com/2020/04/14/GzSBJU.jpg" alt="GzSBJU.jpg"><br>我的BIOS是三代，如果是2代或1代（跟我不一样的建议百度”BIOS”），不用在意不同品牌的按键布局，反正功能肯定是有的，进入界面会有一个启动顺序，找到你U盘的型号移到前面就行。也可以点<strong>高级模式</strong>，在启动选项设置，1、2、3的顺序就是启动顺序。<br><img src="https://s1.ax1x.com/2020/04/14/GzpEkV.jpg" alt="GzpEkV.jpg"><br><img src="https://s1.ax1x.com/2020/04/14/GzSJMj.jpg" alt="GzSJMj.jpg"><br>设置成功的话，点击退出，并保存设置。然后电脑会再一次启动，启动成功会出现进度条，进度条过完后会有win10图标。打开之后就是下图的样子。<br><img src="https://s1.ax1x.com/2020/04/14/GxzP3Q.png" alt="GxzP3Q.png"><br>然后，打开你的U盘，找到你的镜像文件，右键点击装载（这里会生成一个虚拟光驱），然后下一步<br><img src="https://s1.ax1x.com/2020/04/14/GzCEzF.jpg" alt="GzCEzF.jpg"></p>
+<h2 id="6-第四步：格式化硬盘"><a href="#6-第四步：格式化硬盘" class="headerlink" title="6.第四步：格式化硬盘"></a>6.第四步：格式化硬盘</h2><p>格式化掉你要装系统的那个硬盘，<strong>右键</strong>硬盘就能格式化，或者用PE里自带的<strong>分区助手</strong>备份一次再格式化也可以，注意看看硬盘是不是NTFS格式，如果不是要转到NTFS格式。</p>
+<h2 id="7-第五步：打开windows安装器-开始安装系统"><a href="#7-第五步：打开windows安装器-开始安装系统" class="headerlink" title="7.第五步：打开windows安装器,开始安装系统"></a>7.第五步：打开windows安装器,开始安装系统</h2><p>打开桌面的windows安装器<br><img src="https://s1.ax1x.com/2020/04/14/Gxzp4S.png" alt="Gxzp4S.png"><br>如图，第一个选择你刚刚装载的虚拟光驱，然后按这个路径sources&gt;install.wim，<strong>下面两个都选你要装系统的硬盘（你刚刚格式化那个）</strong>，然后选择版本（各版本区别可以自己查，这里推荐专业版）。<br><img src="https://s1.ax1x.com/2020/04/14/Gz3spD.png" alt="Gz3spD.png"><br>然后就可以点开始安装了。</p>
+<p>安装完成就拔掉U盘，重启电脑就可以了。然后就会显示win10的安装界面，接着就是选语言等等的界面，之后的这里就不多说了，按它的默认选项就好了。</p>
+<p>然后你的win10就装好了。欢呼吧！！！</p>
+]]></content>
+      <tags>
+        <tag>系统相关</tag>
+      </tags>
+  </entry>
 </search>
