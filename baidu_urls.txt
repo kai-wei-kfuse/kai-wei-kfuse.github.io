@@ -1,4 +1,4 @@
-http://yoursite.com/2020/04/13/win10/
-http://yoursite.com/2020/04/11/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/
-http://yoursite.com/2020/04/05/first-text/
-http://yoursite.com/2020/04/05/hello-world/
+https://kai-wei-kfuse.github.io/2020/04/13/win10/
+https://kai-wei-kfuse.github.io/2020/04/11/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/
+https://kai-wei-kfuse.github.io/2020/04/05/first-text/
+https://kai-wei-kfuse.github.io/2020/04/05/hello-world/
