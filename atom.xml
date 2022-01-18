@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>kai_wei的资源基地</title>
+  
+  <subtitle>一个什么都有的资源大杂烩（当然，还在施工）</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://kai-wei-kfuse.github.io/"/>
+  <updated>2022-01-18T05:24:21.025Z</updated>
+  <id>https://kai-wei-kfuse.github.io/</id>
+  
+  <author>
+    <name>kai_wei凯惟</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实验5</title>
+    <link href="https://kai-wei-kfuse.github.io/2022/01/18/%E5%AE%9E%E9%AA%8C5/"/>
+    <id>https://kai-wei-kfuse.github.io/2022/01/18/%E5%AE%9E%E9%AA%8C5/</id>
+    <published>2022-01-18T05:21:04.000Z</published>
+    <updated>2022-01-18T05:24:21.025Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;测试&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>你好，访客</title>
+    <link href="https://kai-wei-kfuse.github.io/2022/01/18/hello-world/"/>
+    <id>https://kai-wei-kfuse.github.io/2022/01/18/hello-world/</id>
+    <published>2022-01-18T04:42:09.776Z</published>
+    <updated>2020-04-11T03:57:40.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;创建这个博客算是跟风的吧，不过我确实想有一个平台可以自己有个性化的形式写教程写文章什么什么的，所以就花了好大力气创建了这个博客。&lt;/p&gt;
+&lt;h2 id=&quot;索引&quot;&gt;&lt;a href=&quot;#索引&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="索引" scheme="https://kai-wei-kfuse.github.io/categories/%E7%B4%A2%E5%BC%95/"/>
+    
+    
+      <category term="索引" scheme="https://kai-wei-kfuse.github.io/tags/%E7%B4%A2%E5%BC%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>edge浏览器简单设置</title>
+    <link href="https://kai-wei-kfuse.github.io/2020/05/02/edge/"/>
+    <id>https://kai-wei-kfuse.github.io/2020/05/02/edge/</id>
+    <published>2020-05-02T02:34:19.000Z</published>
+    <updated>2020-05-03T03:01:46.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;edge出了问题？edge的简单设置帮你解决&quot;&gt;&lt;a href=&quot;#edge出了问题？edge的简单设置帮你解决&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="软件应用" scheme="https://kai-wei-kfuse.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>win10怎么激活？win10一键激活</title>
+    <link href="https://kai-wei-kfuse.github.io/2020/04/30/win10%E6%BF%80%E6%B4%BB/"/>
+    <id>https://kai-wei-kfuse.github.io/2020/04/30/win10%E6%BF%80%E6%B4%BB/</id>
+    <published>2020-04-30T02:34:19.000Z</published>
+    <updated>2020-04-30T08:22:06.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;win10怎么激活？win10一键激活&quot;&gt;&lt;a href=&quot;#win10怎么激活？win10一键激活&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="系统相关" scheme="https://kai-wei-kfuse.github.io/tags/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>win10 U盘装机法</title>
+    <link href="https://kai-wei-kfuse.github.io/2020/04/13/win10/"/>
+    <id>https://kai-wei-kfuse.github.io/2020/04/13/win10/</id>
+    <published>2020-04-13T02:34:19.000Z</published>
+    <updated>2020-04-15T03:56:36.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;装机教程-Windows-10-U盘装机&quot;&gt;&lt;a href=&quot;#装机教程-Windows-10-U盘装机&quot; class=&quot;headerlink&quot; title=&quot;#装机教程# Windows 10 U盘装机&quot;&gt;&lt;/a&gt;#装机教程# Windows 10
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="系统相关" scheme="https://kai-wei-kfuse.github.io/tags/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>泰拉瑞亚模组冲突如何解决</title>
+    <link href="https://kai-wei-kfuse.github.io/2020/04/11/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/"/>
+    <id>https://kai-wei-kfuse.github.io/2020/04/11/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/</id>
+    <published>2020-04-11T02:34:19.000Z</published>
+    <updated>2020-04-13T02:05:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;如何快速找出模组冲突&quot;&gt;&lt;a href=&quot;#如何快速找出模组冲突&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="泰拉瑞亚" scheme="https://kai-wei-kfuse.github.io/tags/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>泰拉瑞亚原版全流程攻略</title>
+    <link href="https://kai-wei-kfuse.github.io/2020/04/05/first-text/"/>
+    <id>https://kai-wei-kfuse.github.io/2020/04/05/first-text/</id>
+    <published>2020-04-05T13:35:55.000Z</published>
+    <updated>2020-04-07T07:07:02.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;废话：《泰拉瑞亚》是由Re-Logic公司开发的一款高自由度的沙盒游戏，于2011年5月16日在PC上发行。&lt;br&gt;攻略开始：&lt;br&gt;正在开发…&lt;br&gt;正在开发..&lt;br&gt;正在开发…&lt;br&gt;正在开发….&lt;br&gt;正在开发…&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+      <category term="泰拉瑞亚" scheme="https://kai-wei-kfuse.github.io/categories/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/"/>
+    
+    
+      <category term="泰拉瑞亚" scheme="https://kai-wei-kfuse.github.io/tags/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/"/>
+    
+  </entry>
+  
+</feed>
