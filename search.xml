@@ -22,70 +22,6 @@
       </tags>
   </entry>
   <entry>
-    <title>edge浏览器简单设置</title>
-    <url>/2020/05/02/edge/</url>
-    <content><![CDATA[<h1 id="edge出了问题？edge的简单设置帮你解决"><a href="#edge出了问题？edge的简单设置帮你解决" class="headerlink" title="edge出了问题？edge的简单设置帮你解决"></a>edge出了问题？edge的简单设置帮你解决</h1><p><a href="https://imgchr.com/i/JzA10I" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzA10I.md.png" alt="JzA10I.md.png"></a></p>
-<p>Edge是微软出品的浏览器，这里不多做介绍。</p>
-<p>主要讲讲在edge设置菜单的各种功能，使用过程中出现的问题，怎么通过设置解决。</p>
-<h2 id="问题一：刚打开浏览器是别的网页而不是新标签页"><a href="#问题一：刚打开浏览器是别的网页而不是新标签页" class="headerlink" title="问题一：刚打开浏览器是别的网页而不是新标签页"></a>问题一：刚打开浏览器是别的网页而不是新标签页</h2><blockquote>
-<p>别的网页（比如什么上网导航什么的）</p>
-</blockquote>
-<blockquote>
-<p>新标签页（上图就是新标签页）</p>
-</blockquote>
-<p>这时候就有两种可能：</p>
-<p>1、被网页劫持了，这时可能电脑中了病毒，杀毒可以解决（把浏览器设置改了之后不行的话才是）</p>
-<p>2、浏览器设置被改了（可能是被别的软件改的，因为一般人不会去点那个）</p>
-<p><a href="https://imgchr.com/i/JzEVDs" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEVDs.png" alt="JzEVDs.png"></a></p>
-<p>点右上角的策略号，找到设置打开</p>
-<p>然后找到启动时，选择新标签页，再关掉浏览器重开。</p>
-<p><a href="https://imgchr.com/i/JzEi8S" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEi8S.md.png" alt="JzEi8S.md.png"></a></p>
-<h2 id="问题二：搜索的时候没办法在搜索框输入，而只能在顶部输入"><a href="#问题二：搜索的时候没办法在搜索框输入，而只能在顶部输入" class="headerlink" title="问题二：搜索的时候没办法在搜索框输入，而只能在顶部输入"></a>问题二：搜索的时候没办法在搜索框输入，而只能在顶部输入</h2><p>下图：搜索框，这个问题困扰了我很久，只要在搜索框输入任何东西，都会自动弹到地址栏那里，而且这种情况是突然出现的，我也没改设置。<br><a href="https://imgchr.com/i/JzEjRU" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEjRU.md.png" alt="JzEjRU.md.png"></a></p>
-<p>解决方法，同样是打开设置</p>
-<p><a href="https://imgchr.com/i/JzEkvQ" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEkvQ.png" alt="JzEkvQ.png"></a></p>
-<p>点击隐私与服务，往下拉，找到服务最下面的地址栏</p>
-<p><a href="https://imgchr.com/i/JzEEuj" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEEuj.md.png" alt="JzEEuj.md.png"></a></p>
-<p><a href="https://imgchr.com/i/JzEFgg" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEFgg.md.png" alt="JzEFgg.md.png"></a><br><a href="https://imgchr.com/i/JzVKeA" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzVKeA.md.png" alt="JzVKeA.md.png"></a><br>如果这里显示的是地址栏，那么就改成搜索框，问题就解决了</p>
-<h2 id="问题三：新标签页如何隐藏下面的广告-新闻（如何美化新标签页）"><a href="#问题三：新标签页如何隐藏下面的广告-新闻（如何美化新标签页）" class="headerlink" title="问题三：新标签页如何隐藏下面的广告/新闻（如何美化新标签页）"></a>问题三：新标签页如何隐藏下面的广告/新闻（如何美化新标签页）</h2><p><a href="https://imgchr.com/i/JzZVkq" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzZVkq.md.png" alt="JzZVkq.md.png"></a></p>
-<p>新标签页右上角有个设置，点击如何选择自定义，看自己喜好选择内容显示还是不显示，内容就是指那些新闻和广告什么的。<br><a href="https://imgchr.com/i/JzZKcF" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzZKcF.md.png" alt="JzZKcF.md.png"></a><br><a href="https://imgchr.com/i/JzZ0nH" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzZ0nH.png" alt="JzZ0nH.png"></a></p>
-<p>这里就是edge的简单设置，这是其中一部分，以后会写更多的。</p>
-]]></content>
-      <tags>
-        <tag>软件应用</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>泰拉瑞亚原版全流程攻略</title>
-    <url>/2020/04/05/first-text/</url>
-    <content><![CDATA[<p>废话：《泰拉瑞亚》是由Re-Logic公司开发的一款高自由度的沙盒游戏，于2011年5月16日在PC上发行。<br>攻略开始：<br>正在开发…<br>正在开发..<br>正在开发…<br>正在开发….<br>正在开发…</p>
-]]></content>
-      <categories>
-        <category>泰拉瑞亚</category>
-      </categories>
-      <tags>
-        <tag>泰拉瑞亚</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你好，访客</title>
-    <url>/2022/01/18/hello-world/</url>
-    <content><![CDATA[<p>创建这个博客算是跟风的吧，不过我确实想有一个平台可以自己有个性化的形式写教程写文章什么什么的，所以就花了好大力气创建了这个博客。</p>
-<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><h3 id="博客有什么内容？"><a href="#博客有什么内容？" class="headerlink" title="博客有什么内容？"></a>博客有什么内容？</h3><p>目前的计划：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo+github个人博客创建及美化</span><br><span class="line">泰拉瑞亚全流程攻略</span><br><span class="line">魔方教程与魔方测评</span><br><span class="line">我家的猫</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="其他平台"><a href="#其他平台" class="headerlink" title="其他平台"></a>其他平台</h3><p>哔哩哔哩: <a href="https://space.bilibili.com/403228491" target="_blank" rel="noopener">kai_wei凯惟</a></p>
-<h3 id="交流"><a href="#交流" class="headerlink" title="交流"></a>交流</h3><p>QQ:1171113925<br>欢迎骚扰O(∩_∩)O</p>
-<h3 id="打赏（未完工）"><a href="#打赏（未完工）" class="headerlink" title="打赏（未完工）"></a>打赏（未完工）</h3><p>马上就来</p>
-]]></content>
-      <categories>
-        <category>索引</category>
-      </categories>
-      <tags>
-        <tag>索引</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>C++引用的概念</title>
     <url>/2022/01/21/C-%E5%BC%95%E7%94%A8%E7%9A%84%E6%A6%82%E5%BF%B5/</url>
     <content><![CDATA[<h2 id="C-中引用的概念和应用（初级应用）"><a href="#C-中引用的概念和应用（初级应用）" class="headerlink" title="C++中引用的概念和应用（初级应用）"></a>C++中引用的概念和应用（初级应用）</h2><p><strong>1、引用格式：</strong><code>类型名 &amp; 引用名=某变量名</code></p>
@@ -126,35 +62,34 @@
 ]]></content>
   </entry>
   <entry>
-    <title>win10怎么激活？win10一键激活</title>
-    <url>/2020/04/30/win10%E6%BF%80%E6%B4%BB/</url>
-    <content><![CDATA[<h1 id="win10怎么激活？win10一键激活"><a href="#win10怎么激活？win10一键激活" class="headerlink" title="win10怎么激活？win10一键激活"></a>win10怎么激活？win10一键激活</h1><p>我们辛辛苦苦把windows装好了以后，那么就可以正常使用windows了。</p>
-<p>还不知道怎么装win10？点这里 <a href="https://kai-wei-kfuse.github.io/2020/04/13/win10/#more">https://kai-wei-kfuse.github.io/2020/04/13/win10/#more</a></p>
-<h2 id="下一步就是激活windows"><a href="#下一步就是激活windows" class="headerlink" title="下一步就是激活windows"></a>下一步就是激活windows</h2><h3 id="首先说说不激活windows和激活有什么区别"><a href="#首先说说不激活windows和激活有什么区别" class="headerlink" title="首先说说不激活windows和激活有什么区别"></a>首先说说不激活windows和激活有什么区别</h3><p>答案：没什么区别，只是右下角会有一个激活windows水印，不影响正常使用。<br><a href="https://imgchr.com/i/JqY6Ej" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/30/JqY6Ej.png" alt="JqY6Ej.png"></a></p>
-<p>激活并不难，只要一个激活工具，一键就可以激活。这里推荐小马激活工具</p>
-<p><a href="https://imgchr.com/i/JqNkTJ" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/30/JqNkTJ.png" alt="JqNkTJ.png"></a></p>
-<p>度盘：<a href="https://pan.baidu.com/s/1hYF7mYaR42gt5Fe-omMgHQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1hYF7mYaR42gt5Fe-omMgHQ</a></p>
-<p>提取码：buhb</p>
+    <title>你好，访客</title>
+    <url>/2022/01/18/hello-world/</url>
+    <content><![CDATA[<p>创建这个博客算是跟风的吧，不过我确实想有一个平台可以自己有个性化的形式写教程写文章什么什么的，所以就花了好大力气创建了这个博客。</p>
+<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><h3 id="博客有什么内容？"><a href="#博客有什么内容？" class="headerlink" title="博客有什么内容？"></a>博客有什么内容？</h3><p>目前的计划：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo+github个人博客创建及美化</span><br><span class="line">泰拉瑞亚全流程攻略</span><br><span class="line">魔方教程与魔方测评</span><br><span class="line">我家的猫</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="其他平台"><a href="#其他平台" class="headerlink" title="其他平台"></a>其他平台</h3><p>哔哩哔哩: <a href="https://space.bilibili.com/403228491" target="_blank" rel="noopener">kai_wei凯惟</a></p>
+<h3 id="交流"><a href="#交流" class="headerlink" title="交流"></a>交流</h3><p>QQ:1171113925<br>欢迎骚扰O(∩_∩)O</p>
+<h3 id="打赏（未完工）"><a href="#打赏（未完工）" class="headerlink" title="打赏（未完工）"></a>打赏（未完工）</h3><p>马上就来</p>
 ]]></content>
+      <categories>
+        <category>索引</category>
+      </categories>
       <tags>
-        <tag>系统相关</tag>
+        <tag>索引</tag>
       </tags>
   </entry>
   <entry>
-    <title>CF 300C - Beautiful Numbers 数论</title>
-    <url>/2022/02/23/%E6%95%B0%E8%AE%BA/</url>
-    <content><![CDATA[<p>(广东工业大学 ACM寒假集训 专题四 C）<br>题目链接：<a href="https://vjudge.net/contest/479577#problem/C" target="_blank" rel="noopener">CF 300C - Beautiful Numbers</a><br>洛谷链接：<a href="https://www.luogu.com.cn/problem/CF300C" target="_blank" rel="noopener">CF 300C - Beautiful Numbers</a><br>更好的阅读体验请到这里</p>
-<p>题目描述（洛谷翻译）：<br><strong>题意翻译</strong><br>Vitaly有一些奇怪的癖好，比如他特别爱两个小于10的数字a和b。Vitaly定义十进制表示下每一位都是a或b的数为“好数”，一个每一位数加起来为“好数”的“好数”被称为“极好的数”。</p>
-<p>举个栗子=w=，如果偏爱数字为1和3，那么1212不是“好数”，13和311是“好数”，111是“极好的数”。</p>
-<p>现在Vitaly想知道，长度为n（长度不包括前导0）的“极好的数”有多少个。对1e9+7取模。<br><img src="https://img-blog.csdnimg.cn/2e7a375d296749608b133689daf26841.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2 id="读题"><a href="#读题" class="headerlink" title="读题"></a>读题</h2><p>1、有两个数字a，b。<br>2、“好数”是只由a,b构成的长度为n的数。<br>3、”好数”中每一位之和也是”好数”的数，叫“极好的数”。<br>4、题目要我们找“极好的数”（以下简称极好数）。<br>5、答案取模1e9+7，为质数。</p>
-<p><strong>总体思路：</strong><br>因为我们找的<strong>极好数</strong>来自<strong>好数</strong>，那么我们只要<strong>枚举</strong>长度为n的所有好数，判断是不是每一位之和为好数，是的话说明是极好数，结果累加起来就可以了。<br><strong>如何枚举：</strong><br>一个一个数枚举是不可能的，有1000000位数呢….但是仔细想一下，数的长度是固定为n的，且只有a,b，那么我们是不是就可以枚举a的数量i，那么b的数量一定是n-i，这时候这么多个a和b组成的数就相当于i个a去放n个空位(组合数),所以就是C（n,i）（n在下，i在上）。<br><strong>如何求这个组合数：</strong><br>简单，运用组合数公式：<img src="https://img-blog.csdnimg.cn/8ad137e3434949adb01a3a20a4822f90.png" alt="在这里插入图片描述"><br><strong>答案怎么求，如何求mod：</strong><br>我们不是求出来之后才取模。</p>
-<p><strong>分析：</strong><br>每个答案是一个组合数，但是组合数是一个分式，因为太大了，我们不能求出阶乘后再除下面的阶乘，我们要除数取模。<br>（a/b）mod p ≠(a mod p/ b mod p)mod p<br>这里我们要用费马小定理求逆元：<br>$$\frac{n!}{i!(n-i)!} $$<br>由公式可知，我们要求 <code>i!</code> 和<code>(n-i)!</code>的逆元，让他变成乘法来取模。因为p是质数，所以可以用费马小定理，用快速幂求逆元。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;//组合数，费马小定理，快速幂,逆元</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">long</span> <span class="keyword">long</span> mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> fact[<span class="number">1000005</span>];</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> a,b,n,ans=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">good</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(x)&#123;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> tmp=x%<span class="number">10</span>;</span><br><span class="line">        <span class="keyword">if</span>(tmp!=a &amp;&amp; tmp!=b)<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        x/=<span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">fastpow</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> f,<span class="keyword">long</span> <span class="keyword">long</span> p)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p==<span class="number">0</span>)<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> res=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>)res=res*f%mod;</span><br><span class="line">        f=f*f%mod;<span class="comment">//反正每次模就行，不要让他超longlong</span></span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b&gt;&gt;n;</span><br><span class="line">    fact[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)fact[i]=fact[i<span class="number">-1</span>]*i%mod;<span class="comment">//打表，每次取模</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(good(a*i+b*(n-i)))&#123;</span><br><span class="line">            <span class="keyword">long</span> <span class="keyword">long</span> tmp1=fastpow(fact[i],mod<span class="number">-2</span>)%mod;<span class="comment">//费马小定理求逆元</span></span><br><span class="line">            <span class="keyword">long</span> <span class="keyword">long</span> tmp2=fastpow(fact[n-i],mod<span class="number">-2</span>)%mod;<span class="comment">//求完就取模</span></span><br><span class="line">            ans+=fact[n]*tmp1%mod*tmp2%mod;<span class="comment">//因为n!已经取过模了，所以是后面两个取</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,ans%mod);<span class="comment">//这里模不模都可以</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>好像也讲的不清楚….</p>
+    <title>泰拉瑞亚原版全流程攻略</title>
+    <url>/2020/04/05/first-text/</url>
+    <content><![CDATA[<p>废话：《泰拉瑞亚》是由Re-Logic公司开发的一款高自由度的沙盒游戏，于2011年5月16日在PC上发行。<br>攻略开始：<br>正在开发…<br>正在开发..<br>正在开发…<br>正在开发….<br>正在开发…</p>
 ]]></content>
+      <categories>
+        <category>泰拉瑞亚</category>
+      </categories>
       <tags>
-        <tag>算法</tag>
+        <tag>泰拉瑞亚</tag>
       </tags>
   </entry>
   <entry>
@@ -199,20 +134,51 @@ consumer：消费者版（也就是普通版）</code></pre><p><img src="https:/
       </tags>
   </entry>
   <entry>
-    <title>最长上升子序列LIS</title>
-    <url>/2022/02/23/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/</url>
-    <content><![CDATA[<p><strong>[NOIP1999 普及组] 导弹拦截</strong><br><strong>题目描述</strong><br>某国为了防御敌国的导弹袭击，发展出一种导弹拦截系统。但是这种导弹拦截系统有一个缺陷：虽然它的第一发炮弹能够到达任意的高度，但是以后每一发炮弹都不能高于前一发的高度。某天，雷达捕捉到敌国的导弹来袭。由于该系统还在试用阶段，所以只有一套系统，因此有可能不能拦截所有的导弹。</p>
-<p>输入导弹依次飞来的高度（雷达给出的高度数据是\le 50000≤50000的正整数），计算这套系统最多能拦截多少导弹，如果要拦截所有导弹最少要配备多少套这种导弹拦截系统。</p>
-<p><strong>输入格式</strong><br>1行，若干个整数（个数≤100000）</p>
-<p>NOIP 原题数据规模不超过 2000。</p>
-<p><strong>输出格式</strong><br>2行，每行一个整数，第一个数字表示这套系统最多能拦截多少导弹，第二个数字表示如果要拦截所有导弹最少要配备多少套这种导弹拦截系统。</p>
-<p>输入输出样例<br><img src="https://img-blog.csdnimg.cn/9aba73ff2d5140b4b25f94a6f502b1ef.png" alt="在这里插入图片描述"><br>这里我们需要二分查找优化找子序列的过程，不过这道题变成了最长不上升子序列。<br>这个时候我们设dp[i]的意义为：<strong>长度为i的子序列中末尾的最大值，i相当于子序列的长度</strong>。可以想象一下，这个序列的最后一位如果数字越大，那么构成更长的不上升子序列的长度期望会更长。<br>比如：6 4 2 <strong>1</strong>和6 4 3 <strong>2</strong> 两个序列，末尾越大越有可能会构成更长的子序列。</p>
-<p>首先我们让<code>dp[1]=a[1]</code>，接着开始往后枚举，我们每枚举一个就要判断dp中最后一位(dp[len])和a[i]的大小，如果a[i]更小，那么它可以作为这个子序列的下一项，（这里我们用len）也就是<code>dp[++len]=a[i];</code>如果a[i]大于dp[len]，就要使用二分法找到dp序列中小于a[i]的第一位，然后替换，这里换成了比原来大的数。<br>比如：9 7 5 4 2 然后下一位是3，那么我们换掉比3小的第一位，也就是2，这时候，序列变成了9 7 5 4 3。</p>
-<p>以此类推，遍历到最后，dp的长度len就是最长不上升子序列的长度。<br>第二问的话，可能不好理解，因为如果有两枚导弹，第一枚先来，第二枚后来，而第一枚的高度比第二枚低，那么必须要两台才行，如果后面还有一枚导弹比第二枚导弹还要高，不就要三台了吗……以此类推。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> p[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> b[<span class="number">100010</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i=<span class="number">0</span>,len1=<span class="number">0</span>,ans;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[++i]));<span class="comment">//循环输入</span></span><br><span class="line">    <span class="keyword">int</span> n=i<span class="number">-1</span>;<span class="comment">//最后一次没有输入因此跳出循环，n=i-1</span></span><br><span class="line">    b[<span class="number">0</span>] = <span class="number">100000</span> ;</span><br><span class="line">    b[++len1]=a[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=b[len1])&#123;</span><br><span class="line">            b[++len1]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> l=<span class="number">0</span>,r=len1,mid;</span><br><span class="line">            <span class="keyword">while</span>(l&lt;=r)&#123;</span><br><span class="line">                mid=l+(r-l)/<span class="number">2</span>;</span><br><span class="line">                <span class="keyword">if</span>(a[i]&lt;=b[mid])&#123;</span><br><span class="line">                    ans=mid;</span><br><span class="line">                    l=mid+<span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> r=mid<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            b[ans+<span class="number">1</span>]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">/*for(int j=1;j&lt;=len1;j++)&#123;</span></span><br><span class="line"><span class="comment">                cout&lt;&lt;b[j]&lt;&lt;' ';</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            cout&lt;&lt;endl;*/</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;len1&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> m=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(m&lt;n)&#123;</span><br><span class="line">        <span class="keyword">int</span> last=<span class="number">10000000</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(a[j]&gt;<span class="number">0</span> &amp;&amp; a[j]&lt;=last)&#123;</span><br><span class="line">                m++;</span><br><span class="line">                last=a[j];</span><br><span class="line">                a[j]=<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sum++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>edge浏览器简单设置</title>
+    <url>/2020/05/02/edge/</url>
+    <content><![CDATA[<h1 id="edge出了问题？edge的简单设置帮你解决"><a href="#edge出了问题？edge的简单设置帮你解决" class="headerlink" title="edge出了问题？edge的简单设置帮你解决"></a>edge出了问题？edge的简单设置帮你解决</h1><p><a href="https://imgchr.com/i/JzA10I" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzA10I.md.png" alt="JzA10I.md.png"></a></p>
+<p>Edge是微软出品的浏览器，这里不多做介绍。</p>
+<p>主要讲讲在edge设置菜单的各种功能，使用过程中出现的问题，怎么通过设置解决。</p>
+<h2 id="问题一：刚打开浏览器是别的网页而不是新标签页"><a href="#问题一：刚打开浏览器是别的网页而不是新标签页" class="headerlink" title="问题一：刚打开浏览器是别的网页而不是新标签页"></a>问题一：刚打开浏览器是别的网页而不是新标签页</h2><blockquote>
+<p>别的网页（比如什么上网导航什么的）</p>
+</blockquote>
+<blockquote>
+<p>新标签页（上图就是新标签页）</p>
+</blockquote>
+<p>这时候就有两种可能：</p>
+<p>1、被网页劫持了，这时可能电脑中了病毒，杀毒可以解决（把浏览器设置改了之后不行的话才是）</p>
+<p>2、浏览器设置被改了（可能是被别的软件改的，因为一般人不会去点那个）</p>
+<p><a href="https://imgchr.com/i/JzEVDs" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEVDs.png" alt="JzEVDs.png"></a></p>
+<p>点右上角的策略号，找到设置打开</p>
+<p>然后找到启动时，选择新标签页，再关掉浏览器重开。</p>
+<p><a href="https://imgchr.com/i/JzEi8S" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEi8S.md.png" alt="JzEi8S.md.png"></a></p>
+<h2 id="问题二：搜索的时候没办法在搜索框输入，而只能在顶部输入"><a href="#问题二：搜索的时候没办法在搜索框输入，而只能在顶部输入" class="headerlink" title="问题二：搜索的时候没办法在搜索框输入，而只能在顶部输入"></a>问题二：搜索的时候没办法在搜索框输入，而只能在顶部输入</h2><p>下图：搜索框，这个问题困扰了我很久，只要在搜索框输入任何东西，都会自动弹到地址栏那里，而且这种情况是突然出现的，我也没改设置。<br><a href="https://imgchr.com/i/JzEjRU" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEjRU.md.png" alt="JzEjRU.md.png"></a></p>
+<p>解决方法，同样是打开设置</p>
+<p><a href="https://imgchr.com/i/JzEkvQ" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEkvQ.png" alt="JzEkvQ.png"></a></p>
+<p>点击隐私与服务，往下拉，找到服务最下面的地址栏</p>
+<p><a href="https://imgchr.com/i/JzEEuj" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEEuj.md.png" alt="JzEEuj.md.png"></a></p>
+<p><a href="https://imgchr.com/i/JzEFgg" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzEFgg.md.png" alt="JzEFgg.md.png"></a><br><a href="https://imgchr.com/i/JzVKeA" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzVKeA.md.png" alt="JzVKeA.md.png"></a><br>如果这里显示的是地址栏，那么就改成搜索框，问题就解决了</p>
+<h2 id="问题三：新标签页如何隐藏下面的广告-新闻（如何美化新标签页）"><a href="#问题三：新标签页如何隐藏下面的广告-新闻（如何美化新标签页）" class="headerlink" title="问题三：新标签页如何隐藏下面的广告/新闻（如何美化新标签页）"></a>问题三：新标签页如何隐藏下面的广告/新闻（如何美化新标签页）</h2><p><a href="https://imgchr.com/i/JzZVkq" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzZVkq.md.png" alt="JzZVkq.md.png"></a></p>
+<p>新标签页右上角有个设置，点击如何选择自定义，看自己喜好选择内容显示还是不显示，内容就是指那些新闻和广告什么的。<br><a href="https://imgchr.com/i/JzZKcF" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzZKcF.md.png" alt="JzZKcF.md.png"></a><br><a href="https://imgchr.com/i/JzZ0nH" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzZ0nH.png" alt="JzZ0nH.png"></a></p>
+<p>这里就是edge的简单设置，这是其中一部分，以后会写更多的。</p>
 ]]></content>
       <tags>
-        <tag>算法</tag>
+        <tag>软件应用</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>win10怎么激活？win10一键激活</title>
+    <url>/2020/04/30/win10%E6%BF%80%E6%B4%BB/</url>
+    <content><![CDATA[<h1 id="win10怎么激活？win10一键激活"><a href="#win10怎么激活？win10一键激活" class="headerlink" title="win10怎么激活？win10一键激活"></a>win10怎么激活？win10一键激活</h1><p>我们辛辛苦苦把windows装好了以后，那么就可以正常使用windows了。</p>
+<p>还不知道怎么装win10？点这里 <a href="https://kai-wei-kfuse.github.io/2020/04/13/win10/#more">https://kai-wei-kfuse.github.io/2020/04/13/win10/#more</a></p>
+<h2 id="下一步就是激活windows"><a href="#下一步就是激活windows" class="headerlink" title="下一步就是激活windows"></a>下一步就是激活windows</h2><h3 id="首先说说不激活windows和激活有什么区别"><a href="#首先说说不激活windows和激活有什么区别" class="headerlink" title="首先说说不激活windows和激活有什么区别"></a>首先说说不激活windows和激活有什么区别</h3><p>答案：没什么区别，只是右下角会有一个激活windows水印，不影响正常使用。<br><a href="https://imgchr.com/i/JqY6Ej" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/30/JqY6Ej.png" alt="JqY6Ej.png"></a></p>
+<p>激活并不难，只要一个激活工具，一键就可以激活。这里推荐小马激活工具</p>
+<p><a href="https://imgchr.com/i/JqNkTJ" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/30/JqNkTJ.png" alt="JqNkTJ.png"></a></p>
+<p>度盘：<a href="https://pan.baidu.com/s/1hYF7mYaR42gt5Fe-omMgHQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1hYF7mYaR42gt5Fe-omMgHQ</a></p>
+<p>提取码：buhb</p>
+]]></content>
+      <tags>
+        <tag>系统相关</tag>
       </tags>
   </entry>
   <entry>
@@ -235,6 +201,23 @@ consumer：消费者版（也就是普通版）</code></pre><p><img src="https:/
 <h4 id="总的来说，据我所知找模组冲突没有特别简便的方法，只有靠自己一一排除，也没有什么软件可以一键查出，所以下模组的时候也要谨慎，每个模组都是独立开发的，互相有冲突实属正常，最后希望大家能找到好玩又没有冲突的整合包！！！"><a href="#总的来说，据我所知找模组冲突没有特别简便的方法，只有靠自己一一排除，也没有什么软件可以一键查出，所以下模组的时候也要谨慎，每个模组都是独立开发的，互相有冲突实属正常，最后希望大家能找到好玩又没有冲突的整合包！！！" class="headerlink" title="总的来说，据我所知找模组冲突没有特别简便的方法，只有靠自己一一排除，也没有什么软件可以一键查出，所以下模组的时候也要谨慎，每个模组都是独立开发的，互相有冲突实属正常，最后希望大家能找到好玩又没有冲突的整合包！！！"></a>总的来说，据我所知找模组冲突没有特别简便的方法，只有靠自己一一排除，也没有什么软件可以一键查出，所以下模组的时候也要谨慎，每个模组都是独立开发的，互相有冲突实属正常，最后希望大家能找到好玩又没有冲突的整合包！！！</h4>]]></content>
       <tags>
         <tag>泰拉瑞亚</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CF 300C - Beautiful Numbers 数论</title>
+    <url>/2022/02/23/%E6%95%B0%E8%AE%BA/</url>
+    <content><![CDATA[<p>(广东工业大学 ACM寒假集训 专题四 C）<br>题目链接：<a href="https://vjudge.net/contest/479577#problem/C" target="_blank" rel="noopener">CF 300C - Beautiful Numbers</a><br>洛谷链接：<a href="https://www.luogu.com.cn/problem/CF300C" target="_blank" rel="noopener">CF 300C - Beautiful Numbers</a><br>更好的阅读体验请到这里</p>
+<p>题目描述（洛谷翻译）：<br><strong>题意翻译</strong><br>Vitaly有一些奇怪的癖好，比如他特别爱两个小于10的数字a和b。Vitaly定义十进制表示下每一位都是a或b的数为“好数”，一个每一位数加起来为“好数”的“好数”被称为“极好的数”。</p>
+<p>举个栗子=w=，如果偏爱数字为1和3，那么1212不是“好数”，13和311是“好数”，111是“极好的数”。</p>
+<p>现在Vitaly想知道，长度为n（长度不包括前导0）的“极好的数”有多少个。对1e9+7取模。<br><img src="https://img-blog.csdnimg.cn/2e7a375d296749608b133689daf26841.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h2 id="读题"><a href="#读题" class="headerlink" title="读题"></a>读题</h2><p>1、有两个数字a，b。<br>2、“好数”是只由a,b构成的长度为n的数。<br>3、”好数”中每一位之和也是”好数”的数，叫“极好的数”。<br>4、题目要我们找“极好的数”（以下简称极好数）。<br>5、答案取模1e9+7，为质数。</p>
+<p><strong>总体思路：</strong><br>因为我们找的<strong>极好数</strong>来自<strong>好数</strong>，那么我们只要<strong>枚举</strong>长度为n的所有好数，判断是不是每一位之和为好数，是的话说明是极好数，结果累加起来就可以了。<br><strong>如何枚举：</strong><br>一个一个数枚举是不可能的，有1000000位数呢….但是仔细想一下，数的长度是固定为n的，且只有a,b，那么我们是不是就可以枚举a的数量i，那么b的数量一定是n-i，这时候这么多个a和b组成的数就相当于i个a去放n个空位(组合数),所以就是C（n,i）（n在下，i在上）。<br><strong>如何求这个组合数：</strong><br>简单，运用组合数公式：<img src="https://img-blog.csdnimg.cn/8ad137e3434949adb01a3a20a4822f90.png" alt="在这里插入图片描述"><br><strong>答案怎么求，如何求mod：</strong><br>我们不是求出来之后才取模。</p>
+<p><strong>分析：</strong><br>每个答案是一个组合数，但是组合数是一个分式，因为太大了，我们不能求出阶乘后再除下面的阶乘，我们要除数取模。<br>（a/b）mod p ≠(a mod p/ b mod p)mod p<br>这里我们要用费马小定理求逆元：<br>$$\frac{n!}{i!(n-i)!} $$<br>由公式可知，我们要求 <code>i!</code> 和<code>(n-i)!</code>的逆元，让他变成乘法来取模。因为p是质数，所以可以用费马小定理，用快速幂求逆元。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;//组合数，费马小定理，快速幂,逆元</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">long</span> <span class="keyword">long</span> mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> fact[<span class="number">1000005</span>];</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> a,b,n,ans=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">good</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(x)&#123;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> tmp=x%<span class="number">10</span>;</span><br><span class="line">        <span class="keyword">if</span>(tmp!=a &amp;&amp; tmp!=b)<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        x/=<span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">fastpow</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> f,<span class="keyword">long</span> <span class="keyword">long</span> p)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p==<span class="number">0</span>)<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> res=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>)res=res*f%mod;</span><br><span class="line">        f=f*f%mod;<span class="comment">//反正每次模就行，不要让他超longlong</span></span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b&gt;&gt;n;</span><br><span class="line">    fact[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)fact[i]=fact[i<span class="number">-1</span>]*i%mod;<span class="comment">//打表，每次取模</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(good(a*i+b*(n-i)))&#123;</span><br><span class="line">            <span class="keyword">long</span> <span class="keyword">long</span> tmp1=fastpow(fact[i],mod<span class="number">-2</span>)%mod;<span class="comment">//费马小定理求逆元</span></span><br><span class="line">            <span class="keyword">long</span> <span class="keyword">long</span> tmp2=fastpow(fact[n-i],mod<span class="number">-2</span>)%mod;<span class="comment">//求完就取模</span></span><br><span class="line">            ans+=fact[n]*tmp1%mod*tmp2%mod;<span class="comment">//因为n!已经取过模了，所以是后面两个取</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,ans%mod);<span class="comment">//这里模不模都可以</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>好像也讲的不清楚….</p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -346,6 +329,23 @@ consumer：消费者版（也就是普通版）</code></pre><p><img src="https:/
 ]]></content>
       <tags>
         <tag>c语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>最长上升子序列LIS</title>
+    <url>/2022/02/23/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/</url>
+    <content><![CDATA[<p><strong>[NOIP1999 普及组] 导弹拦截</strong><br><strong>题目描述</strong><br>某国为了防御敌国的导弹袭击，发展出一种导弹拦截系统。但是这种导弹拦截系统有一个缺陷：虽然它的第一发炮弹能够到达任意的高度，但是以后每一发炮弹都不能高于前一发的高度。某天，雷达捕捉到敌国的导弹来袭。由于该系统还在试用阶段，所以只有一套系统，因此有可能不能拦截所有的导弹。</p>
+<p>输入导弹依次飞来的高度（雷达给出的高度数据是\le 50000≤50000的正整数），计算这套系统最多能拦截多少导弹，如果要拦截所有导弹最少要配备多少套这种导弹拦截系统。</p>
+<p><strong>输入格式</strong><br>1行，若干个整数（个数≤100000）</p>
+<p>NOIP 原题数据规模不超过 2000。</p>
+<p><strong>输出格式</strong><br>2行，每行一个整数，第一个数字表示这套系统最多能拦截多少导弹，第二个数字表示如果要拦截所有导弹最少要配备多少套这种导弹拦截系统。</p>
+<p>输入输出样例<br><img src="https://img-blog.csdnimg.cn/9aba73ff2d5140b4b25f94a6f502b1ef.png" alt="在这里插入图片描述"><br>这里我们需要二分查找优化找子序列的过程，不过这道题变成了最长不上升子序列。<br>这个时候我们设dp[i]的意义为：<strong>长度为i的子序列中末尾的最大值，i相当于子序列的长度</strong>。可以想象一下，这个序列的最后一位如果数字越大，那么构成更长的不上升子序列的长度期望会更长。<br>比如：6 4 2 <strong>1</strong>和6 4 3 <strong>2</strong> 两个序列，末尾越大越有可能会构成更长的子序列。</p>
+<p>首先我们让<code>dp[1]=a[1]</code>，接着开始往后枚举，我们每枚举一个就要判断dp中最后一位(dp[len])和a[i]的大小，如果a[i]更小，那么它可以作为这个子序列的下一项，（这里我们用len）也就是<code>dp[++len]=a[i];</code>如果a[i]大于dp[len]，就要使用二分法找到dp序列中小于a[i]的第一位，然后替换，这里换成了比原来大的数。<br>比如：9 7 5 4 2 然后下一位是3，那么我们换掉比3小的第一位，也就是2，这时候，序列变成了9 7 5 4 3。</p>
+<p>以此类推，遍历到最后，dp的长度len就是最长不上升子序列的长度。<br>第二问的话，可能不好理解，因为如果有两枚导弹，第一枚先来，第二枚后来，而第一枚的高度比第二枚低，那么必须要两台才行，如果后面还有一枚导弹比第二枚导弹还要高，不就要三台了吗……以此类推。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> p[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> b[<span class="number">100010</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i=<span class="number">0</span>,len1=<span class="number">0</span>,ans;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[++i]));<span class="comment">//循环输入</span></span><br><span class="line">    <span class="keyword">int</span> n=i<span class="number">-1</span>;<span class="comment">//最后一次没有输入因此跳出循环，n=i-1</span></span><br><span class="line">    b[<span class="number">0</span>] = <span class="number">100000</span> ;</span><br><span class="line">    b[++len1]=a[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=b[len1])&#123;</span><br><span class="line">            b[++len1]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> l=<span class="number">0</span>,r=len1,mid;</span><br><span class="line">            <span class="keyword">while</span>(l&lt;=r)&#123;</span><br><span class="line">                mid=l+(r-l)/<span class="number">2</span>;</span><br><span class="line">                <span class="keyword">if</span>(a[i]&lt;=b[mid])&#123;</span><br><span class="line">                    ans=mid;</span><br><span class="line">                    l=mid+<span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> r=mid<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            b[ans+<span class="number">1</span>]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">/*for(int j=1;j&lt;=len1;j++)&#123;</span></span><br><span class="line"><span class="comment">                cout&lt;&lt;b[j]&lt;&lt;' ';</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            cout&lt;&lt;endl;*/</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;len1&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> m=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(m&lt;n)&#123;</span><br><span class="line">        <span class="keyword">int</span> last=<span class="number">10000000</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(a[j]&gt;<span class="number">0</span> &amp;&amp; a[j]&lt;=last)&#123;</span><br><span class="line">                m++;</span><br><span class="line">                last=a[j];</span><br><span class="line">                a[j]=<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sum++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
 </search>
