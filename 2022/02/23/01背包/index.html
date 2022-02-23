@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="泰拉瑞亚," />
+  <meta name="keywords" content="算法," />
 
 
 
@@ -85,17 +85,24 @@
 
 
 
-<meta name="description" content="废话：《泰拉瑞亚》是由Re-Logic公司开发的一款高自由度的沙盒游戏，于2011年5月16日在PC上发行。攻略开始：正在开发…正在开发..正在开发…正在开发….正在开发…">
+<meta name="description" content="动态规划之01背包（广东工业大学 2022 寒假集训 专题二）洛谷P1048采药题目描述辰辰是个天资聪颖的孩子，他的梦想是成为世界上最伟大的医师。为此，他想拜附近最有威望的医师为师。医师为了判断他的资质，给他出了一个难题。医师把他带到一个到处都是草药的山洞里对他说：“孩子，这个山洞里有一些不同的草药，采每一株都需要一些时间，每一株也有它自身的价值。我会给你一段时间，在这段时间里，你可以采到一些草药">
 <meta property="og:type" content="article">
-<meta property="og:title" content="泰拉瑞亚原版全流程攻略">
-<meta property="og:url" content="https://kai-wei-kfuse.github.io/2020/04/05/first-text/index.html">
+<meta property="og:title" content="洛谷P1048 [NOIP2005 普及组] 采药 （01背包）">
+<meta property="og:url" content="https://kai-wei-kfuse.github.io/2022/02/23/01%E8%83%8C%E5%8C%85/index.html">
 <meta property="og:site_name" content="kai_wei的资源基地">
-<meta property="og:description" content="废话：《泰拉瑞亚》是由Re-Logic公司开发的一款高自由度的沙盒游戏，于2011年5月16日在PC上发行。攻略开始：正在开发…正在开发..正在开发…正在开发….正在开发…">
-<meta property="article:published_time" content="2020-04-05T13:35:55.000Z">
-<meta property="article:modified_time" content="2020-04-07T07:07:02.000Z">
+<meta property="og:description" content="动态规划之01背包（广东工业大学 2022 寒假集训 专题二）洛谷P1048采药题目描述辰辰是个天资聪颖的孩子，他的梦想是成为世界上最伟大的医师。为此，他想拜附近最有威望的医师为师。医师为了判断他的资质，给他出了一个难题。医师把他带到一个到处都是草药的山洞里对他说：“孩子，这个山洞里有一些不同的草药，采每一株都需要一些时间，每一株也有它自身的价值。我会给你一段时间，在这段时间里，你可以采到一些草药">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/d0374fbcd35647568af699fc269ff9d4.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/33918568bfe348a2a50bef37492b3076.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/fa11bd0765fa4ab29c733f13a707d116.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/5a13550a60e5409e80ee23840cbf5e4d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7f7d2fcd58fd461fbefd5ebb45ae0ea1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/4e8968d0511d4b18b3a42b480f5c9cbe.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="article:published_time" content="2022-02-23T01:49:57.000Z">
+<meta property="article:modified_time" content="2022-02-23T01:50:41.904Z">
 <meta property="article:author" content="kai_wei凯惟">
-<meta property="article:tag" content="泰拉瑞亚">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/d0374fbcd35647568af699fc269ff9d4.png">
 
 
 
@@ -125,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="https://kai-wei-kfuse.github.io/2020/04/05/first-text/"/>
+  <link rel="canonical" href="https://kai-wei-kfuse.github.io/2022/02/23/01背包/"/>
 
 
 
 
 
-  <title>泰拉瑞亚原版全流程攻略 | kai_wei的资源基地</title>
+  <title>洛谷P1048 [NOIP2005 普及组] 采药 （01背包） | kai_wei的资源基地</title>
   
 
 
@@ -313,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://kai-wei-kfuse.github.io/2020/04/05/first-text/">
+    <link itemprop="mainEntityOfPage" href="https://kai-wei-kfuse.github.io/2022/02/23/01%E8%83%8C%E5%8C%85/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kai_wei凯惟">
@@ -330,7 +337,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">泰拉瑞亚原版全流程攻略</h2>
+          <h2 class="post-title" itemprop="name headline">洛谷P1048 [NOIP2005 普及组] 采药 （01背包）</h2>
         
 
         <div class="post-meta">
@@ -342,8 +349,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-05T21:35:55+08:00">
-                2020-04-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-02-23T09:49:57+08:00">
+                2022-02-23
               </time>
             
 
@@ -353,28 +360,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/" itemprop="url" rel="index">
-                    <span itemprop="name">泰拉瑞亚</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -383,8 +368,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/04/05/first-text/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/04/05/first-text/" itemprop="commentCount"></span>
+                <a href="/2022/02/23/01%E8%83%8C%E5%8C%85/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2022/02/23/01%E8%83%8C%E5%8C%85/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -424,7 +409,19 @@
       
 
       
-        <p>废话：《泰拉瑞亚》是由Re-Logic公司开发的一款高自由度的沙盒游戏，于2011年5月16日在PC上发行。<br>攻略开始：<br>正在开发…<br>正在开发..<br>正在开发…<br>正在开发….<br>正在开发…</p>
+        <p><strong>动态规划之01背包</strong><br>（广东工业大学 2022 寒假集训 专题二）<br><a href="https://www.luogu.com.cn/problem/P1048" target="_blank" rel="noopener">洛谷P1048采药</a><br><strong>题目描述</strong><br>辰辰是个天资聪颖的孩子，他的梦想是成为世界上最伟大的医师。为此，他想拜附近最有威望的医师为师。医师为了判断他的资质，给他出了一个难题。医师把他带到一个到处都是草药的山洞里对他说：“孩子，这个山洞里有一些不同的草药，采每一株都需要一些时间，每一株也有它自身的价值。我会给你一段时间，在这段时间里，你可以采到一些草药。如果你是一个聪明的孩子，你应该可以让采到的草药的总价值最大。”</p>
+<p>如果你是辰辰，你能完成这个任务吗？</p>
+<p><strong>输入格式</strong><br>第一行有 2 个整数 T（1≤T≤1000）和 M（1≤M≤100），用一个空格隔开，T 代表总共能够用来采药的时间，M 代表山洞里的草药的数目。</p>
+<p>接下来的 M 行每行包括两个在 1 到 100 之间（包括 1 和 100）的整数，分别表示采摘某株草药的时间和这株草药的价值。</p>
+<p><strong>输出格式</strong><br>输出在规定的时间内可以采到的草药的最大总价值。</p>
+<p><strong>输入输出样例</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/d0374fbcd35647568af699fc269ff9d4.png" alt="在这里插入图片描述"></p>
+<p><strong>说明/提示</strong><br>【数据范围】</p>
+<p>对于 30% 的数据，M≤10；<br>对于全部的数据，M≤100。<br>【题目来源】</p>
+<p>NOIP 2005 普及组第三题<br><strong>讲解：</strong><br>01背包问题的特点是<strong>选与不选</strong>，每个物品只有一个，选了就没有了。</p>
+<p>既然是动态规划，那么我们就有dp数组，这里我们构建二维数组能方便理解01背包（没有为什么，就是二维数组），dp[i][j]表示我们选<strong>i件物品</strong>和<strong>有j背包容量</strong>时，能挣的最多的钱；我们假设有<strong>四个物品</strong>（物品重量 和 取得这个物品能挣多少钱）和<strong>10g的背包容量</strong>。表格中<strong>横向</strong>是背包容量（从0到10），<strong>纵向</strong>是选择的物品数量（0到4，用<strong>数组存物品重量m[1~4]</strong>）。那么我们就是要求dp[4][10]。<br><img src="https://img-blog.csdnimg.cn/33918568bfe348a2a50bef37492b3076.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>1、为什么要有横轴表示背包的容量从0到10？<br>可以看一个例子，假如我们装物品装到第四件（6g 6元），我们的选择是带走它，那么此时背包就只剩<strong>10-6=4g</strong>，如果我们求了<strong>背包容量为4时</strong>的最大值（挣的钱的最大值），我们只要<strong>两者加起来</strong>就能得到这种情况下（带走第四件物品）的结果。<br>2、为什么要纵轴表示选取物品从0件到4件？<br>可以按照正常人思维想，拿物品不就是一个一个拿的吗？（bushi），其实这样我们可以求得拿1件物品/拿两件物品…所挣的最大钱数。</p>
+<p><strong>第一行</strong>：0个物品当然挣0元<br><img src="https://img-blog.csdnimg.cn/fa11bd0765fa4ab29c733f13a707d116.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><strong>第二行：</strong> 我们拿第一件物品，2g 3元，背包容量为0时，放不下，因此我们<strong>不选</strong>；为1时，也放不下，但是2~10都能放得下，所以后面我们<strong>选</strong>，都能挣钱，（dp[1][10]代表拿一件物品时10背包容量所挣的最多的钱，确实是3）<br><img src="https://img-blog.csdnimg.cn/5a13550a60e5409e80ee23840cbf5e4d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><strong>第三行：</strong> 我们拿第二件物品，3g4元，同样，0 1 2个背包容量装不下，因此我们<strong>不选</strong>，那么就和前一行一样，相当于我们选第1个物品，而不选第二个。当容量为3时我们1有两种选择，<strong>选</strong>和<strong>不选</strong>，1、如果选，那么此时背包用了3个容量只剩下0的容量，我们已经选了这个物品，所以我们要在前一行找，也就是dp[2][3]=dp[1][0]=0，dp[1][0]+m[2]=0+4=4，2、如果不选，那么就是选一个物品，是前一行的dp[1][3]=3，很明显4大于3，我们选4。以此类推…<br><img src="https://img-blog.csdnimg.cn/7f7d2fcd58fd461fbefd5ebb45ae0ea1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述">把剩下的解决后得到表格，答案就是dp[4][10]=10<br><img src="https://img-blog.csdnimg.cn/4e8968d0511d4b18b3a42b480f5c9cbe.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>总结：这里的转移方程为dp[ i ] [ j ]=max(dp[ i-1 ] [ j ],dp[ i -1] [ j - m [ i ] ]+val[i])<br>二维数组只是方便理解，我我们发现dp[ i ] [ j ]只会和前一行有关，所以我们可以用一维滚动数组来实现。dp[j]=max(dp[j],dp[j-m[i]]+val[i]);<br>在b站找嘉特的动态规划视频有详细解释，我就是在那学的，这里懒得再打了。模板参考ac代码：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;//动态规划模板</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> t,num,c[<span class="number">102</span>],v[<span class="number">102</span>],dp[<span class="number">1002</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;t&gt;&gt;num;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=num;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;c[i],&amp;v[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=num;i++)&#123;<span class="comment">//外循环是枚举物品编号</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=t;j&gt;=c[i];j--)&#123;<span class="comment">//内循环是枚举背包容量</span></span><br><span class="line">            dp[j]=max(dp[j],dp[j-c[i]]+v[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=t;j++)&#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;dp[t];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -471,7 +468,7 @@
 <!-- 本文标题 -->
   <li>
     <strong>本文标题： </strong>
-    泰拉瑞亚原版全流程攻略
+    洛谷P1048 [NOIP2005 普及组] 采药 （01背包）
   </li>
   <li class="post-copyright-author">
     <strong>本文作者：</strong>
@@ -479,7 +476,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://kai-wei-kfuse.github.io/2020/04/05/first-text/" title="泰拉瑞亚原版全流程攻略">https://kai-wei-kfuse.github.io/2020/04/05/first-text/</a>
+    <a href="https://kai-wei-kfuse.github.io/2022/02/23/01%E8%83%8C%E5%8C%85/" title="洛谷P1048 [NOIP2005 普及组] 采药 （01背包）">https://kai-wei-kfuse.github.io/2022/02/23/01%E8%83%8C%E5%8C%85/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -494,7 +491,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/" rel="tag"># 泰拉瑞亚</a>
+            <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
           
         </div>
       
@@ -507,14 +504,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2022/02/23/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/" rel="next" title="最长上升子序列LIS">
+                <i class="fa fa-chevron-left"></i> 最长上升子序列LIS
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/04/11/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/" rel="prev" title="泰拉瑞亚模组冲突如何解决">
-                泰拉瑞亚模组冲突如何解决 <i class="fa fa-chevron-right"></i>
+              <a href="/2022/02/23/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" rel="prev" title="滑动窗口+单调队列 概念与例题（P1886 洛谷）">
+                滑动窗口+单调队列 概念与例题（P1886 洛谷） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

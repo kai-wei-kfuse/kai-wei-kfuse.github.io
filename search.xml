@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>洛谷P1048 [NOIP2005 普及组] 采药 （01背包）</title>
+    <url>/2022/02/23/01%E8%83%8C%E5%8C%85/</url>
+    <content><![CDATA[<p><strong>动态规划之01背包</strong><br>（广东工业大学 2022 寒假集训 专题二）<br><a href="https://www.luogu.com.cn/problem/P1048" target="_blank" rel="noopener">洛谷P1048采药</a><br><strong>题目描述</strong><br>辰辰是个天资聪颖的孩子，他的梦想是成为世界上最伟大的医师。为此，他想拜附近最有威望的医师为师。医师为了判断他的资质，给他出了一个难题。医师把他带到一个到处都是草药的山洞里对他说：“孩子，这个山洞里有一些不同的草药，采每一株都需要一些时间，每一株也有它自身的价值。我会给你一段时间，在这段时间里，你可以采到一些草药。如果你是一个聪明的孩子，你应该可以让采到的草药的总价值最大。”</p>
+<p>如果你是辰辰，你能完成这个任务吗？</p>
+<p><strong>输入格式</strong><br>第一行有 2 个整数 T（1≤T≤1000）和 M（1≤M≤100），用一个空格隔开，T 代表总共能够用来采药的时间，M 代表山洞里的草药的数目。</p>
+<p>接下来的 M 行每行包括两个在 1 到 100 之间（包括 1 和 100）的整数，分别表示采摘某株草药的时间和这株草药的价值。</p>
+<p><strong>输出格式</strong><br>输出在规定的时间内可以采到的草药的最大总价值。</p>
+<p><strong>输入输出样例</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/d0374fbcd35647568af699fc269ff9d4.png" alt="在这里插入图片描述"></p>
+<p><strong>说明/提示</strong><br>【数据范围】</p>
+<p>对于 30% 的数据，M≤10；<br>对于全部的数据，M≤100。<br>【题目来源】</p>
+<p>NOIP 2005 普及组第三题<br><strong>讲解：</strong><br>01背包问题的特点是<strong>选与不选</strong>，每个物品只有一个，选了就没有了。</p>
+<p>既然是动态规划，那么我们就有dp数组，这里我们构建二维数组能方便理解01背包（没有为什么，就是二维数组），dp[i][j]表示我们选<strong>i件物品</strong>和<strong>有j背包容量</strong>时，能挣的最多的钱；我们假设有<strong>四个物品</strong>（物品重量 和 取得这个物品能挣多少钱）和<strong>10g的背包容量</strong>。表格中<strong>横向</strong>是背包容量（从0到10），<strong>纵向</strong>是选择的物品数量（0到4，用<strong>数组存物品重量m[1~4]</strong>）。那么我们就是要求dp[4][10]。<br><img src="https://img-blog.csdnimg.cn/33918568bfe348a2a50bef37492b3076.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>1、为什么要有横轴表示背包的容量从0到10？<br>可以看一个例子，假如我们装物品装到第四件（6g 6元），我们的选择是带走它，那么此时背包就只剩<strong>10-6=4g</strong>，如果我们求了<strong>背包容量为4时</strong>的最大值（挣的钱的最大值），我们只要<strong>两者加起来</strong>就能得到这种情况下（带走第四件物品）的结果。<br>2、为什么要纵轴表示选取物品从0件到4件？<br>可以按照正常人思维想，拿物品不就是一个一个拿的吗？（bushi），其实这样我们可以求得拿1件物品/拿两件物品…所挣的最大钱数。</p>
+<p><strong>第一行</strong>：0个物品当然挣0元<br><img src="https://img-blog.csdnimg.cn/fa11bd0765fa4ab29c733f13a707d116.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><strong>第二行：</strong> 我们拿第一件物品，2g 3元，背包容量为0时，放不下，因此我们<strong>不选</strong>；为1时，也放不下，但是2~10都能放得下，所以后面我们<strong>选</strong>，都能挣钱，（dp[1][10]代表拿一件物品时10背包容量所挣的最多的钱，确实是3）<br><img src="https://img-blog.csdnimg.cn/5a13550a60e5409e80ee23840cbf5e4d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br><strong>第三行：</strong> 我们拿第二件物品，3g4元，同样，0 1 2个背包容量装不下，因此我们<strong>不选</strong>，那么就和前一行一样，相当于我们选第1个物品，而不选第二个。当容量为3时我们1有两种选择，<strong>选</strong>和<strong>不选</strong>，1、如果选，那么此时背包用了3个容量只剩下0的容量，我们已经选了这个物品，所以我们要在前一行找，也就是dp[2][3]=dp[1][0]=0，dp[1][0]+m[2]=0+4=4，2、如果不选，那么就是选一个物品，是前一行的dp[1][3]=3，很明显4大于3，我们选4。以此类推…<br><img src="https://img-blog.csdnimg.cn/7f7d2fcd58fd461fbefd5ebb45ae0ea1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述">把剩下的解决后得到表格，答案就是dp[4][10]=10<br><img src="https://img-blog.csdnimg.cn/4e8968d0511d4b18b3a42b480f5c9cbe.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>总结：这里的转移方程为dp[ i ] [ j ]=max(dp[ i-1 ] [ j ],dp[ i -1] [ j - m [ i ] ]+val[i])<br>二维数组只是方便理解，我我们发现dp[ i ] [ j ]只会和前一行有关，所以我们可以用一维滚动数组来实现。dp[j]=max(dp[j],dp[j-m[i]]+val[i]);<br>在b站找嘉特的动态规划视频有详细解释，我就是在那学的，这里懒得再打了。模板参考ac代码：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;//动态规划模板</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> t,num,c[<span class="number">102</span>],v[<span class="number">102</span>],dp[<span class="number">1002</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;t&gt;&gt;num;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=num;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;c[i],&amp;v[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=num;i++)&#123;<span class="comment">//外循环是枚举物品编号</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=t;j&gt;=c[i];j--)&#123;<span class="comment">//内循环是枚举背包容量</span></span><br><span class="line">            dp[j]=max(dp[j],dp[j-c[i]]+v[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=t;j++)&#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;dp[t];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>edge浏览器简单设置</title>
     <url>/2020/05/02/edge/</url>
     <content><![CDATA[<h1 id="edge出了问题？edge的简单设置帮你解决"><a href="#edge出了问题？edge的简单设置帮你解决" class="headerlink" title="edge出了问题？edge的简单设置帮你解决"></a>edge出了问题？edge的简单设置帮你解决</h1><p><a href="https://imgchr.com/i/JzA10I" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/05/03/JzA10I.md.png" alt="JzA10I.md.png"></a></p>
@@ -46,6 +67,97 @@
       </tags>
   </entry>
   <entry>
+    <title>你好，访客</title>
+    <url>/2022/01/18/hello-world/</url>
+    <content><![CDATA[<p>创建这个博客算是跟风的吧，不过我确实想有一个平台可以自己有个性化的形式写教程写文章什么什么的，所以就花了好大力气创建了这个博客。</p>
+<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><h3 id="博客有什么内容？"><a href="#博客有什么内容？" class="headerlink" title="博客有什么内容？"></a>博客有什么内容？</h3><p>目前的计划：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo+github个人博客创建及美化</span><br><span class="line">泰拉瑞亚全流程攻略</span><br><span class="line">魔方教程与魔方测评</span><br><span class="line">我家的猫</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="其他平台"><a href="#其他平台" class="headerlink" title="其他平台"></a>其他平台</h3><p>哔哩哔哩: <a href="https://space.bilibili.com/403228491" target="_blank" rel="noopener">kai_wei凯惟</a></p>
+<h3 id="交流"><a href="#交流" class="headerlink" title="交流"></a>交流</h3><p>QQ:1171113925<br>欢迎骚扰O(∩_∩)O</p>
+<h3 id="打赏（未完工）"><a href="#打赏（未完工）" class="headerlink" title="打赏（未完工）"></a>打赏（未完工）</h3><p>马上就来</p>
+]]></content>
+      <categories>
+        <category>索引</category>
+      </categories>
+      <tags>
+        <tag>索引</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++引用的概念</title>
+    <url>/2022/01/21/C-%E5%BC%95%E7%94%A8%E7%9A%84%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<h2 id="C-中引用的概念和应用（初级应用）"><a href="#C-中引用的概念和应用（初级应用）" class="headerlink" title="C++中引用的概念和应用（初级应用）"></a>C++中引用的概念和应用（初级应用）</h2><p><strong>1、引用格式：</strong><code>类型名 &amp; 引用名=某变量名</code></p>
+<p>下面发写法定义了一个引用：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> n = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">int</span> &amp; r = n;<span class="comment">//r引用了n，r的类型是int&amp;</span></span><br></pre></td></tr></table></figure>
+<p>如上代码，这里r就是一个引用，而r的类型是int&amp;。</p>
+<blockquote>
+<p>某个变量的引用，<strong>等价于</strong>这个变量，相当于该变量的一个别名。</p>
+</blockquote>
+<p>也就是说变量的引用和变量本身<strong>是一回事</strong>。</p>
+<p>如下面的例子，r作为n的引用，对r赋值相当于对n赋值，对n赋值r也会做出改变。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> n = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">int</span> &amp; r = n;</span><br><span class="line">r = <span class="number">4</span>;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; r;<span class="comment">//输出 4</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; n;<span class="comment">//输出 4</span></span><br><span class="line">n = <span class="number">5</span>;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; r;<span class="comment">//输出5</span></span><br></pre></td></tr></table></figure>
+<h2 id="———————————————————分割线"><a href="#———————————————————分割线" class="headerlink" title="———————————————————分割线"></a>———————————————————分割线</h2><hr>
+<p><strong>2、注意：</strong></p>
+<blockquote>
+<p>1、定义引用时一定要将其<strong>初始化</strong>成引用某个变量<br>2、初始化后，它就一直引用<strong>该变量</strong>，不会再引用别的变量了。<br>3、引用只能引用<strong>变量</strong>，不能引用常量和表达式。</p>
+</blockquote>
+<p>看下面的例子：我们让r1引用了a，接着<code>&amp; r2 = r1</code>代表r2也引用了a，所以对r2赋值会影响到a；再下面我们让<code>r1=b；</code>如上面的注意所说，初始化后，它就一直引用<strong>该变量</strong>，也就是a，不会再引用别的变量了。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">double</span> a = <span class="number">4</span>, b = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">double</span> &amp; r1 = a;</span><br><span class="line"><span class="keyword">double</span> &amp; r2 = r1;<span class="comment">// r2 也引用 a</span></span><br><span class="line">r2 = <span class="number">10</span>;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; a &lt;&lt; <span class="built_in">endl</span>;<span class="comment">// 输出 10</span></span><br><span class="line">r1 = b;<span class="comment">// r1 并没有引用 b</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; a &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//输出 5</span></span><br></pre></td></tr></table></figure>
+<h2 id="———————————————————分割线-1"><a href="#———————————————————分割线-1" class="headerlink" title="———————————————————分割线"></a>———————————————————分割线</h2><p><strong>3、我们为什么要引用？</strong></p>
+<p>C语言中，如何编写交换两个整型变量值的函数？<br>我们都知道，需要用指针直接对地址交换。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">( <span class="keyword">int</span> *a, <span class="keyword">int</span> *b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> tmp;</span><br><span class="line">	tmp = * a; * a = * b; * b = tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n1, n2;</span><br><span class="line">swap(&amp;n1, &amp;n2) ; <span class="comment">// n1,n2 的值被交换</span></span><br></pre></td></tr></table></figure>
+<p>在c++的引用的帮助下，代码会简介更多。没有星号，调用的时候也不需要取地址。<br>因为某个变量的引用，<strong>等价于</strong>这个变量，相当于该变量的一个别名，所以函数内交换了，就是n1 n2交换了。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">( <span class="keyword">int</span> &amp; a, <span class="keyword">int</span> &amp; b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> tmp;</span><br><span class="line">	tmp = a; a = b; b = tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n1, n2;</span><br><span class="line">swap(n1,n2) ;</span><br><span class="line"><span class="comment">// n1,n2 的值被交换</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="———————————————————分割线-2"><a href="#———————————————————分割线-2" class="headerlink" title="———————————————————分割线"></a>———————————————————分割线</h2><p><strong>4、常引用</strong><br>定义引用时，前面加const 关键字，即为“常引用”。<br>比如：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> &amp; r = n;</span><br></pre></td></tr></table></figure>
+
+<p>这里r的类型是 const int &amp;。</p>
+<p>常引用不能通过<strong>常引用</strong>去修改其引用的内容，但是不代表本身不能被修改，可以通过其他方式修改。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> n = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> &amp; r = n;</span><br><span class="line">r = <span class="number">200</span>;</span><br><span class="line"><span class="comment">//编译错</span></span><br><span class="line">n = <span class="number">300</span>;</span><br><span class="line"><span class="comment">// 没问题</span></span><br></pre></td></tr></table></figure>
+<h2 id="———————————————————分割线-3"><a href="#———————————————————分割线-3" class="headerlink" title="———————————————————分割线"></a>———————————————————分割线</h2><p><strong>5、常引用和非常引用的转换</strong></p>
+<blockquote>
+<p>const T &amp;和 T &amp; 是不同的类型！</p>
+</blockquote>
+<p>T &amp;类型的引用或 T 类型的变量可以用来初始化const T &amp; 类型的引用。</p>
+<p>const T类型的常变量和 const T &amp; 类型的引用则不能用来初始化 T &amp; 类型的引用，除非进行 强制类型转换 。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>win10怎么激活？win10一键激活</title>
+    <url>/2020/04/30/win10%E6%BF%80%E6%B4%BB/</url>
+    <content><![CDATA[<h1 id="win10怎么激活？win10一键激活"><a href="#win10怎么激活？win10一键激活" class="headerlink" title="win10怎么激活？win10一键激活"></a>win10怎么激活？win10一键激活</h1><p>我们辛辛苦苦把windows装好了以后，那么就可以正常使用windows了。</p>
+<p>还不知道怎么装win10？点这里 <a href="https://kai-wei-kfuse.github.io/2020/04/13/win10/#more">https://kai-wei-kfuse.github.io/2020/04/13/win10/#more</a></p>
+<h2 id="下一步就是激活windows"><a href="#下一步就是激活windows" class="headerlink" title="下一步就是激活windows"></a>下一步就是激活windows</h2><h3 id="首先说说不激活windows和激活有什么区别"><a href="#首先说说不激活windows和激活有什么区别" class="headerlink" title="首先说说不激活windows和激活有什么区别"></a>首先说说不激活windows和激活有什么区别</h3><p>答案：没什么区别，只是右下角会有一个激活windows水印，不影响正常使用。<br><a href="https://imgchr.com/i/JqY6Ej" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/30/JqY6Ej.png" alt="JqY6Ej.png"></a></p>
+<p>激活并不难，只要一个激活工具，一键就可以激活。这里推荐小马激活工具</p>
+<p><a href="https://imgchr.com/i/JqNkTJ" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/30/JqNkTJ.png" alt="JqNkTJ.png"></a></p>
+<p>度盘：<a href="https://pan.baidu.com/s/1hYF7mYaR42gt5Fe-omMgHQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1hYF7mYaR42gt5Fe-omMgHQ</a></p>
+<p>提取码：buhb</p>
+]]></content>
+      <tags>
+        <tag>系统相关</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CF 300C - Beautiful Numbers 数论</title>
+    <url>/2022/02/23/%E6%95%B0%E8%AE%BA/</url>
+    <content><![CDATA[<p>(广东工业大学 ACM寒假集训 专题四 C）<br>题目链接：<a href="https://vjudge.net/contest/479577#problem/C" target="_blank" rel="noopener">CF 300C - Beautiful Numbers</a><br>洛谷链接：<a href="https://www.luogu.com.cn/problem/CF300C" target="_blank" rel="noopener">CF 300C - Beautiful Numbers</a><br>更好的阅读体验请到这里</p>
+<p>题目描述（洛谷翻译）：<br><strong>题意翻译</strong><br>Vitaly有一些奇怪的癖好，比如他特别爱两个小于10的数字a和b。Vitaly定义十进制表示下每一位都是a或b的数为“好数”，一个每一位数加起来为“好数”的“好数”被称为“极好的数”。</p>
+<p>举个栗子=w=，如果偏爱数字为1和3，那么1212不是“好数”，13和311是“好数”，111是“极好的数”。</p>
+<p>现在Vitaly想知道，长度为n（长度不包括前导0）的“极好的数”有多少个。对1e9+7取模。<br><img src="https://img-blog.csdnimg.cn/2e7a375d296749608b133689daf26841.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h2 id="读题"><a href="#读题" class="headerlink" title="读题"></a>读题</h2><p>1、有两个数字a，b。<br>2、“好数”是只由a,b构成的长度为n的数。<br>3、”好数”中每一位之和也是”好数”的数，叫“极好的数”。<br>4、题目要我们找“极好的数”（以下简称极好数）。<br>5、答案取模1e9+7，为质数。</p>
+<p><strong>总体思路：</strong><br>因为我们找的<strong>极好数</strong>来自<strong>好数</strong>，那么我们只要<strong>枚举</strong>长度为n的所有好数，判断是不是每一位之和为好数，是的话说明是极好数，结果累加起来就可以了。<br><strong>如何枚举：</strong><br>一个一个数枚举是不可能的，有1000000位数呢….但是仔细想一下，数的长度是固定为n的，且只有a,b，那么我们是不是就可以枚举a的数量i，那么b的数量一定是n-i，这时候这么多个a和b组成的数就相当于i个a去放n个空位(组合数),所以就是C（n,i）（n在下，i在上）。<br><strong>如何求这个组合数：</strong><br>简单，运用组合数公式：<img src="https://img-blog.csdnimg.cn/8ad137e3434949adb01a3a20a4822f90.png" alt="在这里插入图片描述"><br><strong>答案怎么求，如何求mod：</strong><br>我们不是求出来之后才取模。</p>
+<p><strong>分析：</strong><br>每个答案是一个组合数，但是组合数是一个分式，因为太大了，我们不能求出阶乘后再除下面的阶乘，我们要除数取模。<br>（a/b）mod p ≠(a mod p/ b mod p)mod p<br>这里我们要用费马小定理求逆元：<br>$$\frac{n!}{i!(n-i)!} $$<br>由公式可知，我们要求 <code>i!</code> 和<code>(n-i)!</code>的逆元，让他变成乘法来取模。因为p是质数，所以可以用费马小定理，用快速幂求逆元。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;//组合数，费马小定理，快速幂,逆元</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">long</span> <span class="keyword">long</span> mod=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> fact[<span class="number">1000005</span>];</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> a,b,n,ans=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">good</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(x)&#123;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> tmp=x%<span class="number">10</span>;</span><br><span class="line">        <span class="keyword">if</span>(tmp!=a &amp;&amp; tmp!=b)<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        x/=<span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">fastpow</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> f,<span class="keyword">long</span> <span class="keyword">long</span> p)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p==<span class="number">0</span>)<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> res=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>)res=res*f%mod;</span><br><span class="line">        f=f*f%mod;<span class="comment">//反正每次模就行，不要让他超longlong</span></span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b&gt;&gt;n;</span><br><span class="line">    fact[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)fact[i]=fact[i<span class="number">-1</span>]*i%mod;<span class="comment">//打表，每次取模</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(good(a*i+b*(n-i)))&#123;</span><br><span class="line">            <span class="keyword">long</span> <span class="keyword">long</span> tmp1=fastpow(fact[i],mod<span class="number">-2</span>)%mod;<span class="comment">//费马小定理求逆元</span></span><br><span class="line">            <span class="keyword">long</span> <span class="keyword">long</span> tmp2=fastpow(fact[n-i],mod<span class="number">-2</span>)%mod;<span class="comment">//求完就取模</span></span><br><span class="line">            ans+=fact[n]*tmp1%mod*tmp2%mod;<span class="comment">//因为n!已经取过模了，所以是后面两个取</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,ans%mod);<span class="comment">//这里模不模都可以</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>好像也讲的不清楚….</p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>win10 U盘装机法</title>
     <url>/2020/04/13/win10/</url>
     <content><![CDATA[<h1 id="装机教程-Windows-10-U盘装机"><a href="#装机教程-Windows-10-U盘装机" class="headerlink" title="#装机教程# Windows 10 U盘装机"></a>#装机教程# Windows 10 U盘装机</h1><p>windows 10目前越来越普及，目前（2020年）win 10用户已经超过了win7，如下图（这张图是一年前的，很旧了，现在肯定不止这个数据）<br><img src="https://s1.ax1x.com/2020/04/13/Gjd6G6.png" alt="Gjd6G6.png"><br>而且微软官方已经停止了对win 7的支持。</p>
@@ -87,18 +199,20 @@ consumer：消费者版（也就是普通版）</code></pre><p><img src="https:/
       </tags>
   </entry>
   <entry>
-    <title>win10怎么激活？win10一键激活</title>
-    <url>/2020/04/30/win10%E6%BF%80%E6%B4%BB/</url>
-    <content><![CDATA[<h1 id="win10怎么激活？win10一键激活"><a href="#win10怎么激活？win10一键激活" class="headerlink" title="win10怎么激活？win10一键激活"></a>win10怎么激活？win10一键激活</h1><p>我们辛辛苦苦把windows装好了以后，那么就可以正常使用windows了。</p>
-<p>还不知道怎么装win10？点这里 <a href="https://kai-wei-kfuse.github.io/2020/04/13/win10/#more">https://kai-wei-kfuse.github.io/2020/04/13/win10/#more</a></p>
-<h2 id="下一步就是激活windows"><a href="#下一步就是激活windows" class="headerlink" title="下一步就是激活windows"></a>下一步就是激活windows</h2><h3 id="首先说说不激活windows和激活有什么区别"><a href="#首先说说不激活windows和激活有什么区别" class="headerlink" title="首先说说不激活windows和激活有什么区别"></a>首先说说不激活windows和激活有什么区别</h3><p>答案：没什么区别，只是右下角会有一个激活windows水印，不影响正常使用。<br><a href="https://imgchr.com/i/JqY6Ej" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/30/JqY6Ej.png" alt="JqY6Ej.png"></a></p>
-<p>激活并不难，只要一个激活工具，一键就可以激活。这里推荐小马激活工具</p>
-<p><a href="https://imgchr.com/i/JqNkTJ" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/30/JqNkTJ.png" alt="JqNkTJ.png"></a></p>
-<p>度盘：<a href="https://pan.baidu.com/s/1hYF7mYaR42gt5Fe-omMgHQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1hYF7mYaR42gt5Fe-omMgHQ</a></p>
-<p>提取码：buhb</p>
+    <title>最长上升子序列LIS</title>
+    <url>/2022/02/23/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/</url>
+    <content><![CDATA[<p><strong>[NOIP1999 普及组] 导弹拦截</strong><br><strong>题目描述</strong><br>某国为了防御敌国的导弹袭击，发展出一种导弹拦截系统。但是这种导弹拦截系统有一个缺陷：虽然它的第一发炮弹能够到达任意的高度，但是以后每一发炮弹都不能高于前一发的高度。某天，雷达捕捉到敌国的导弹来袭。由于该系统还在试用阶段，所以只有一套系统，因此有可能不能拦截所有的导弹。</p>
+<p>输入导弹依次飞来的高度（雷达给出的高度数据是\le 50000≤50000的正整数），计算这套系统最多能拦截多少导弹，如果要拦截所有导弹最少要配备多少套这种导弹拦截系统。</p>
+<p><strong>输入格式</strong><br>1行，若干个整数（个数≤100000）</p>
+<p>NOIP 原题数据规模不超过 2000。</p>
+<p><strong>输出格式</strong><br>2行，每行一个整数，第一个数字表示这套系统最多能拦截多少导弹，第二个数字表示如果要拦截所有导弹最少要配备多少套这种导弹拦截系统。</p>
+<p>输入输出样例<br><img src="https://img-blog.csdnimg.cn/9aba73ff2d5140b4b25f94a6f502b1ef.png" alt="在这里插入图片描述"><br>这里我们需要二分查找优化找子序列的过程，不过这道题变成了最长不上升子序列。<br>这个时候我们设dp[i]的意义为：<strong>长度为i的子序列中末尾的最大值，i相当于子序列的长度</strong>。可以想象一下，这个序列的最后一位如果数字越大，那么构成更长的不上升子序列的长度期望会更长。<br>比如：6 4 2 <strong>1</strong>和6 4 3 <strong>2</strong> 两个序列，末尾越大越有可能会构成更长的子序列。</p>
+<p>首先我们让<code>dp[1]=a[1]</code>，接着开始往后枚举，我们每枚举一个就要判断dp中最后一位(dp[len])和a[i]的大小，如果a[i]更小，那么它可以作为这个子序列的下一项，（这里我们用len）也就是<code>dp[++len]=a[i];</code>如果a[i]大于dp[len]，就要使用二分法找到dp序列中小于a[i]的第一位，然后替换，这里换成了比原来大的数。<br>比如：9 7 5 4 2 然后下一位是3，那么我们换掉比3小的第一位，也就是2，这时候，序列变成了9 7 5 4 3。</p>
+<p>以此类推，遍历到最后，dp的长度len就是最长不上升子序列的长度。<br>第二问的话，可能不好理解，因为如果有两枚导弹，第一枚先来，第二枚后来，而第一枚的高度比第二枚低，那么必须要两台才行，如果后面还有一枚导弹比第二枚导弹还要高，不就要三台了吗……以此类推。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> p[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> b[<span class="number">100010</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i=<span class="number">0</span>,len1=<span class="number">0</span>,ans;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[++i]));<span class="comment">//循环输入</span></span><br><span class="line">    <span class="keyword">int</span> n=i<span class="number">-1</span>;<span class="comment">//最后一次没有输入因此跳出循环，n=i-1</span></span><br><span class="line">    b[<span class="number">0</span>] = <span class="number">100000</span> ;</span><br><span class="line">    b[++len1]=a[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=b[len1])&#123;</span><br><span class="line">            b[++len1]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> l=<span class="number">0</span>,r=len1,mid;</span><br><span class="line">            <span class="keyword">while</span>(l&lt;=r)&#123;</span><br><span class="line">                mid=l+(r-l)/<span class="number">2</span>;</span><br><span class="line">                <span class="keyword">if</span>(a[i]&lt;=b[mid])&#123;</span><br><span class="line">                    ans=mid;</span><br><span class="line">                    l=mid+<span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> r=mid<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            b[ans+<span class="number">1</span>]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">/*for(int j=1;j&lt;=len1;j++)&#123;</span></span><br><span class="line"><span class="comment">                cout&lt;&lt;b[j]&lt;&lt;' ';</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            cout&lt;&lt;endl;*/</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;len1&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> m=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(m&lt;n)&#123;</span><br><span class="line">        <span class="keyword">int</span> last=<span class="number">10000000</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(a[j]&gt;<span class="number">0</span> &amp;&amp; a[j]&lt;=last)&#123;</span><br><span class="line">                m++;</span><br><span class="line">                last=a[j];</span><br><span class="line">                a[j]=<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sum++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
-        <tag>系统相关</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -121,6 +235,31 @@ consumer：消费者版（也就是普通版）</code></pre><p><img src="https:/
 <h4 id="总的来说，据我所知找模组冲突没有特别简便的方法，只有靠自己一一排除，也没有什么软件可以一键查出，所以下模组的时候也要谨慎，每个模组都是独立开发的，互相有冲突实属正常，最后希望大家能找到好玩又没有冲突的整合包！！！"><a href="#总的来说，据我所知找模组冲突没有特别简便的方法，只有靠自己一一排除，也没有什么软件可以一键查出，所以下模组的时候也要谨慎，每个模组都是独立开发的，互相有冲突实属正常，最后希望大家能找到好玩又没有冲突的整合包！！！" class="headerlink" title="总的来说，据我所知找模组冲突没有特别简便的方法，只有靠自己一一排除，也没有什么软件可以一键查出，所以下模组的时候也要谨慎，每个模组都是独立开发的，互相有冲突实属正常，最后希望大家能找到好玩又没有冲突的整合包！！！"></a>总的来说，据我所知找模组冲突没有特别简便的方法，只有靠自己一一排除，也没有什么软件可以一键查出，所以下模组的时候也要谨慎，每个模组都是独立开发的，互相有冲突实属正常，最后希望大家能找到好玩又没有冲突的整合包！！！</h4>]]></content>
       <tags>
         <tag>泰拉瑞亚</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>滑动窗口+单调队列 概念与例题（P1886 洛谷）</title>
+    <url>/2022/02/23/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</url>
+    <content><![CDATA[<p>（广东工业大学ACM专题学习一）</p>
+<h2 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h2><p>滑动窗口算法（也叫尺取）的概念其实很简单，很多情况下要结合更多知识来解题，比如单调队列。<br>什么是滑动窗口：在计算机网络中，滑动窗口算法是用来改善吞吐量的技术。在算法中则是维护一个由左右指针在字符串或数组中构成的窗口（窗口大小可变或固定），在窗口中进行的操作。</p>
+<h2 id="单调队列"><a href="#单调队列" class="headerlink" title="单调队列"></a>单调队列</h2><p>也叫双端队列，简单来说就是通过不段入队和出队，保证队列元素是单调的。</p>
+<p><strong>专题学习一 滑动窗口</strong><br>下面我们主要讲一下如何维护一个单调队列。<br>有一个长为 n 的序列 a，以及一个大小为 k 的窗口。现在这个从左边开始向右滑动，每次滑动一个单位，求出每次滑动后窗口中的最大值和最小值。<br><img src="https://img-blog.csdnimg.cn/d9d8c4f6adf8414493f7f5909cbe0fcc.png" alt="在这里插入图片描述"><br><strong>输入格式</strong><br>输入一共有两行，第一行有两个正整数 n,k。 第二行 n 个整数，表示序列 a。<br><strong>输出格式</strong><br>输出共两行，第一行为每次窗口滑动的最小值<br>第二行为每次窗口滑动的最大值<br>输入：</p>
+<blockquote>
+<p>8 3<br>1 3 -1 -3 5 3 6 7</p>
+</blockquote>
+<p>输出：</p>
+<blockquote>
+<p>-1 -3 -3 -3 3 3<br>3 3 5 5 6 7</p>
+</blockquote>
+<p>分析：<br>这道题是<strong>滑动窗口+单调队列</strong>的模板题。</p>
+<p>我们知道只要每窗口移动一次，输出最值即可；那么我们怎么求每个窗口的最值呢？如果<strong>暴力</strong>的话，我们可以在窗口每移动一次就<strong>遍历</strong>整窗口寻找最值，但是每移动一次就遍历，相当于遍历窗口位置还要遍历窗口里面的元素，复杂度可想而知。</p>
+<p>所以我们只知道<strong>滑动窗口</strong>是不足够的，这里我们还需要学习<strong>单调队列</strong>来解决。</p>
+<p>(我们先看找最小值)<br>        维护一个<strong>单调队列</strong>，这个队列的<strong>性质</strong>是从队头到队尾元素一定是递增的同时遍历数组，队列中的元素在数组中的下标一定是<strong>单调递增</strong>的（因为每次都从队尾进去），而<strong>队头</strong>就是最小元素。<br>        每遍历一个元素就让他和队尾判断；如果这个元素比队尾元素大，说明如果元素入队队列依然可以保持单调；如果这个元素比队尾小，也就是说如果这个元素入队了，队列就不单调了，这里我们就要踢出队尾元素（换个说法：按照找最值的思维，如果队尾元素比加入元素还大，那么这个队尾元素就完全没有成为最小值的潜力了），同时，不要别忘记窗口大小是有限的，如果队头元素下标和队尾元素下标之差大于窗口大小，就要踢出队头元素。<br>        接下来我们模拟一下样例。（队列以数组元素为元素，也可以下标为元素，这里不讲）<br><img src="https://img-blog.csdnimg.cn/44174261be1e4105b6a02beccac10e8b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="红色"><br><strong>注意</strong>：图中红色X就是被踢除的元素。<br><strong>注意</strong>：我们要等到i遍历到k（也就是窗口大小），才开始输出。<br>如图：<br>①遍历元素1，1入队，没有元素出队。<br>②遍历元素3，3大于队尾1，3入队，没有元素出队。<br>③遍历元素-1，-1小于队尾3，3出队，再次判断，-1小于新队尾1，1出队，-1入队。<br>④遍历元素-3，-3小于队尾-1，-1出队，-3入队。<br>⑤遍历元素5，5大于-3,5入队，没有元素出队。<br>以此类推，遍历到3时，3小于5，5出队，再次判断，3大于-3，3入队。<br>这个过程维护了一个单调的队列，但还不够。<img src="https://img-blog.csdnimg.cn/fef359e97d8d48b2b1de81ceaad1eb89.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="请添加图片描述"></p>
+<p>我们看最后一行，如果按照上面的判断，6可以进队，但是认真看看样例，窗口大小是3，-3到6已结溢出窗口了，所以我们每次判断都要加一个窗口长度的维护。<br>新建一个队列，每次元素进队的同时，下标也进队。<img src="https://img-blog.csdnimg.cn/e5fcd307f6f04addaf7045a5073aa207.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="请添加图片描述"><br>这时候添加一个操作<br>①遍历元素1，1入队，(<strong>队头和队尾下标之差小于3</strong>)没有元素出队。<br>②遍历元素3，3大于队尾1，3入队，（<strong>队头和队尾下标之差小于3</strong>）没有元素出队。<br>③遍历元素-1，-1小于队尾3，3出队，再次判断，-1小于新队尾1，1出队，（<strong>队头和队尾下标之差小于3</strong>）-1入队。<br>④遍历元素-3，-3小于队尾-1，-1出队，-3入队（<strong>队头和队尾下标之差小于3</strong>）。<br>⑤遍历元素5，5大于-3,5入队，（<strong>队头和队尾下标之差小于3</strong>）没有元素出队。<br>以此类推，遍历到3时，3小于5，5出队，再次判断，3大于-3，3入队。<br>遍历到6,6入队，（<strong>队头和队尾下标之差等于3</strong>）踢出队头元素-3。<br>只要每次遍历都输出队头就能得到序列，最大值只要判断的时候换一个符号。<br>参考代码：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;//使用数组来模拟队列</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">1000002</span>];</span><br><span class="line"><span class="keyword">int</span> q[<span class="number">1000002</span>];</span><br><span class="line"><span class="keyword">int</span> x[<span class="number">1000002</span>];</span><br><span class="line"><span class="keyword">int</span> q1[<span class="number">1000002</span>];</span><br><span class="line"><span class="keyword">int</span> x1[<span class="number">1000002</span>];</span><br><span class="line"><span class="keyword">int</span> head=<span class="number">1</span>,tail=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,k;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;k;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;<span class="comment">//最小</span></span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; x[head]+k&lt;=i)head++;<span class="comment">//head右移代表踢出队头</span></span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; q[tail]&gt;a[i])tail--;<span class="comment">//tail左移代表踢出队尾</span></span><br><span class="line">        q[++tail]=a[i];<span class="comment">//队尾右移同时元素入队</span></span><br><span class="line">        x[tail]=i;</span><br><span class="line">        <span class="keyword">if</span>(i&gt;=k)<span class="built_in">printf</span>(<span class="string">"%d "</span>,q[head]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;<span class="comment">//最大</span></span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; x1[head]+k&lt;=i)head++;</span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; q1[tail]&lt;a[i])tail--;</span><br><span class="line">        q1[++tail]=a[i];</span><br><span class="line">        x1[tail]=i;</span><br><span class="line">        <span class="keyword">if</span>(i&gt;=k)<span class="built_in">printf</span>(<span class="string">"%d "</span>,q1[head]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -208,64 +347,5 @@ consumer：消费者版（也就是普通版）</code></pre><p><img src="https:/
       <tags>
         <tag>c语言</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>你好，访客</title>
-    <url>/2022/01/18/hello-world/</url>
-    <content><![CDATA[<p>创建这个博客算是跟风的吧，不过我确实想有一个平台可以自己有个性化的形式写教程写文章什么什么的，所以就花了好大力气创建了这个博客。</p>
-<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><h3 id="博客有什么内容？"><a href="#博客有什么内容？" class="headerlink" title="博客有什么内容？"></a>博客有什么内容？</h3><p>目前的计划：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo+github个人博客创建及美化</span><br><span class="line">泰拉瑞亚全流程攻略</span><br><span class="line">魔方教程与魔方测评</span><br><span class="line">我家的猫</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="其他平台"><a href="#其他平台" class="headerlink" title="其他平台"></a>其他平台</h3><p>哔哩哔哩: <a href="https://space.bilibili.com/403228491" target="_blank" rel="noopener">kai_wei凯惟</a></p>
-<h3 id="交流"><a href="#交流" class="headerlink" title="交流"></a>交流</h3><p>QQ:1171113925<br>欢迎骚扰O(∩_∩)O</p>
-<h3 id="打赏（未完工）"><a href="#打赏（未完工）" class="headerlink" title="打赏（未完工）"></a>打赏（未完工）</h3><p>马上就来</p>
-]]></content>
-      <categories>
-        <category>索引</category>
-      </categories>
-      <tags>
-        <tag>索引</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++引用的概念</title>
-    <url>/2022/01/21/C-%E5%BC%95%E7%94%A8%E7%9A%84%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<h2 id="C-中引用的概念和应用（初级应用）"><a href="#C-中引用的概念和应用（初级应用）" class="headerlink" title="C++中引用的概念和应用（初级应用）"></a>C++中引用的概念和应用（初级应用）</h2><p><strong>1、引用格式：</strong><code>类型名 &amp; 引用名=某变量名</code></p>
-<p>下面发写法定义了一个引用：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> n = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">int</span> &amp; r = n;<span class="comment">//r引用了n，r的类型是int&amp;</span></span><br></pre></td></tr></table></figure>
-<p>如上代码，这里r就是一个引用，而r的类型是int&amp;。</p>
-<blockquote>
-<p>某个变量的引用，<strong>等价于</strong>这个变量，相当于该变量的一个别名。</p>
-</blockquote>
-<p>也就是说变量的引用和变量本身<strong>是一回事</strong>。</p>
-<p>如下面的例子，r作为n的引用，对r赋值相当于对n赋值，对n赋值r也会做出改变。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> n = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">int</span> &amp; r = n;</span><br><span class="line">r = <span class="number">4</span>;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; r;<span class="comment">//输出 4</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; n;<span class="comment">//输出 4</span></span><br><span class="line">n = <span class="number">5</span>;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; r;<span class="comment">//输出5</span></span><br></pre></td></tr></table></figure>
-<h2 id="———————————————————分割线"><a href="#———————————————————分割线" class="headerlink" title="———————————————————分割线"></a>———————————————————分割线</h2><hr>
-<p><strong>2、注意：</strong></p>
-<blockquote>
-<p>1、定义引用时一定要将其<strong>初始化</strong>成引用某个变量<br>2、初始化后，它就一直引用<strong>该变量</strong>，不会再引用别的变量了。<br>3、引用只能引用<strong>变量</strong>，不能引用常量和表达式。</p>
-</blockquote>
-<p>看下面的例子：我们让r1引用了a，接着<code>&amp; r2 = r1</code>代表r2也引用了a，所以对r2赋值会影响到a；再下面我们让<code>r1=b；</code>如上面的注意所说，初始化后，它就一直引用<strong>该变量</strong>，也就是a，不会再引用别的变量了。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">double</span> a = <span class="number">4</span>, b = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">double</span> &amp; r1 = a;</span><br><span class="line"><span class="keyword">double</span> &amp; r2 = r1;<span class="comment">// r2 也引用 a</span></span><br><span class="line">r2 = <span class="number">10</span>;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; a &lt;&lt; <span class="built_in">endl</span>;<span class="comment">// 输出 10</span></span><br><span class="line">r1 = b;<span class="comment">// r1 并没有引用 b</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; a &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//输出 5</span></span><br></pre></td></tr></table></figure>
-<h2 id="———————————————————分割线-1"><a href="#———————————————————分割线-1" class="headerlink" title="———————————————————分割线"></a>———————————————————分割线</h2><p><strong>3、我们为什么要引用？</strong></p>
-<p>C语言中，如何编写交换两个整型变量值的函数？<br>我们都知道，需要用指针直接对地址交换。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">( <span class="keyword">int</span> *a, <span class="keyword">int</span> *b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> tmp;</span><br><span class="line">	tmp = * a; * a = * b; * b = tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n1, n2;</span><br><span class="line">swap(&amp;n1, &amp;n2) ; <span class="comment">// n1,n2 的值被交换</span></span><br></pre></td></tr></table></figure>
-<p>在c++的引用的帮助下，代码会简介更多。没有星号，调用的时候也不需要取地址。<br>因为某个变量的引用，<strong>等价于</strong>这个变量，相当于该变量的一个别名，所以函数内交换了，就是n1 n2交换了。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">( <span class="keyword">int</span> &amp; a, <span class="keyword">int</span> &amp; b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> tmp;</span><br><span class="line">	tmp = a; a = b; b = tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n1, n2;</span><br><span class="line">swap(n1,n2) ;</span><br><span class="line"><span class="comment">// n1,n2 的值被交换</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="———————————————————分割线-2"><a href="#———————————————————分割线-2" class="headerlink" title="———————————————————分割线"></a>———————————————————分割线</h2><p><strong>4、常引用</strong><br>定义引用时，前面加const 关键字，即为“常引用”。<br>比如：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> &amp; r = n;</span><br></pre></td></tr></table></figure>
-
-<p>这里r的类型是 const int &amp;。</p>
-<p>常引用不能通过<strong>常引用</strong>去修改其引用的内容，但是不代表本身不能被修改，可以通过其他方式修改。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> n = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> &amp; r = n;</span><br><span class="line">r = <span class="number">200</span>;</span><br><span class="line"><span class="comment">//编译错</span></span><br><span class="line">n = <span class="number">300</span>;</span><br><span class="line"><span class="comment">// 没问题</span></span><br></pre></td></tr></table></figure>
-<h2 id="———————————————————分割线-3"><a href="#———————————————————分割线-3" class="headerlink" title="———————————————————分割线"></a>———————————————————分割线</h2><p><strong>5、常引用和非常引用的转换</strong></p>
-<blockquote>
-<p>const T &amp;和 T &amp; 是不同的类型！</p>
-</blockquote>
-<p>T &amp;类型的引用或 T 类型的变量可以用来初始化const T &amp; 类型的引用。</p>
-<p>const T类型的常变量和 const T &amp; 类型的引用则不能用来初始化 T &amp; 类型的引用，除非进行 强制类型转换 。</p>
-]]></content>
   </entry>
 </search>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kai-wei-kfuse.github.io/"/>
-  <updated>2022-01-21T13:59:21.262Z</updated>
+  <updated>2022-02-23T01:52:11.417Z</updated>
   <id>https://kai-wei-kfuse.github.io/</id>
   
   <author>
@@ -15,6 +15,107 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>滑动窗口+单调队列 概念与例题（P1886 洛谷）</title>
+    <link href="https://kai-wei-kfuse.github.io/2022/02/23/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
+    <id>https://kai-wei-kfuse.github.io/2022/02/23/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
+    <published>2022-02-23T01:51:25.000Z</published>
+    <updated>2022-02-23T01:52:11.417Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;（广东工业大学ACM专题学习一）&lt;/p&gt;
+&lt;h2 id=&quot;滑动窗口&quot;&gt;&lt;a href=&quot;#滑动窗口&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://kai-wei-kfuse.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷P1048 [NOIP2005 普及组] 采药 （01背包）</title>
+    <link href="https://kai-wei-kfuse.github.io/2022/02/23/01%E8%83%8C%E5%8C%85/"/>
+    <id>https://kai-wei-kfuse.github.io/2022/02/23/01%E8%83%8C%E5%8C%85/</id>
+    <published>2022-02-23T01:49:57.000Z</published>
+    <updated>2022-02-23T01:50:41.904Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;动态规划之01背包&lt;/strong&gt;&lt;br&gt;（广东工业大学 2022 寒假集训 专题二）&lt;br&gt;&lt;a href=&quot;https://www.luogu.com.cn/problem/P1048&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://kai-wei-kfuse.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最长上升子序列LIS</title>
+    <link href="https://kai-wei-kfuse.github.io/2022/02/23/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/"/>
+    <id>https://kai-wei-kfuse.github.io/2022/02/23/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/</id>
+    <published>2022-02-23T01:48:16.000Z</published>
+    <updated>2022-02-23T01:49:28.909Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;[NOIP1999 普及组]
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://kai-wei-kfuse.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF 300C - Beautiful Numbers 数论</title>
+    <link href="https://kai-wei-kfuse.github.io/2022/02/23/%E6%95%B0%E8%AE%BA/"/>
+    <id>https://kai-wei-kfuse.github.io/2022/02/23/%E6%95%B0%E8%AE%BA/</id>
+    <published>2022-02-23T01:46:41.000Z</published>
+    <updated>2022-02-23T01:48:33.623Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;(广东工业大学 ACM寒假集训 专题四 C）&lt;br&gt;题目链接：&lt;a href=&quot;https://vjudge.net/contest/479577#problem/C&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CF 300C - Beautiful
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://kai-wei-kfuse.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>C++引用的概念</title>
