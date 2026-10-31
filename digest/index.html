@@ -233,6 +233,10 @@ kbd {
 .icon-btn:hover { border-color: var(--line-3); color: var(--acc); background: var(--s2); }
 .theme-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; }
 .kbd-hint { width: auto; padding: 0 10px; font-family: var(--font-mono); font-size: 12px; }
+/* 返回博客入口：仅部署在站点域名（非 file://）时由脚本解除 hidden */
+.hd-back { width: auto; padding: 0 12px; font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; gap: 7px; white-space: nowrap; }
+.hd-back[hidden] { display: none; }
+@media (max-width: 640px) { .hd-back { padding: 0 10px; } .hd-back .hd-back-label { display: none; } }
 .m-menu-btn { display: none; }
 /* 移动端菜单 */
 .m-menu {
@@ -948,6 +952,10 @@ body:not(.is-reading) .rp { display: none; }
     </a>
     <nav class="nav-links" id="navLinks" aria-label="主导航"></nav>
     <div class="nav-acts">
+      <a class="icon-btn kbd-hint hd-back" id="backToBlog" href="/" title="返回博客首页" hidden>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        <span class="hd-back-label">返回博客</span>
+      </a>
       <button class="icon-btn m-menu-btn" id="navMenuBtn" aria-label="打开菜单" aria-expanded="false" aria-controls="mMenu">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
@@ -964,6 +972,7 @@ body:not(.is-reading) .rp { display: none; }
   </div>
   <nav class="m-menu" id="mMenu" aria-label="移动端菜单"></nav>
 </header>
+<script>try { if (location.protocol !== 'file:') { var bb = document.getElementById('backToBlog'); if (bb) bb.hidden = false; } } catch (e) {}</script>
 
 <div class="page">
   <!-- ② Hero：HUD 取景框 + 品牌字标 + 检索 + 双 CTA + 统计 + 时间轴 -->
