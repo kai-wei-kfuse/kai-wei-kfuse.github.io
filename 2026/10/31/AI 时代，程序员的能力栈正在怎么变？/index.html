@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="FPBIvUKO9NBHOTxXLVyb5_AYJ_lG5xTP3Hk6xoFb2tI" />
+
+
+
+  <meta name="msvalidate.01" content="4472C70FAA911C20AD9784AF66FB5DEF" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="AI,程序员,AI编程,职业发展,判断力," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="kai_wei的资源基地" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="AI 已经不满足于「辅助写代码」了。2023 年 GitHub 称其用户中 46% 的代码由 Copilot 生成；2026 年 4 月，Google 的 CEO 宣布公司全部新代码的 75% 出自 AI——一年半前这个数字还只有 25%，涨得整齐得让人起疑，但方向已无人怀疑。Stack Overflow 2025 年的开发者调查显示，84% 的开发者用上了 AI，其中 51% 每天在用。 所以真">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 时代，程序员的能力栈正在怎么变？">
+<meta property="og:url" content="https://kai-wei-kfuse.github.io/2026/10/31/AI%20%E6%97%B6%E4%BB%A3%EF%BC%8C%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%83%BD%E5%8A%9B%E6%A0%88%E6%AD%A3%E5%9C%A8%E6%80%8E%E4%B9%88%E5%8F%98%EF%BC%9F/index.html">
+<meta property="og:site_name" content="kai_wei的资源基地">
+<meta property="og:description" content="AI 已经不满足于「辅助写代码」了。2023 年 GitHub 称其用户中 46% 的代码由 Copilot 生成；2026 年 4 月，Google 的 CEO 宣布公司全部新代码的 75% 出自 AI——一年半前这个数字还只有 25%，涨得整齐得让人起疑，但方向已无人怀疑。Stack Overflow 2025 年的开发者调查显示，84% 的开发者用上了 AI，其中 51% 每天在用。 所以真">
+<meta property="og:locale">
+<meta property="article:published_time" content="2026-10-31T04:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-31T03:13:56.952Z">
+<meta property="article:author" content="kai_wei凯惟">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="程序员">
+<meta property="article:tag" content="AI编程">
+<meta property="article:tag" content="职业发展">
+<meta property="article:tag" content="判断力">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://kai-wei-kfuse.github.io/2026/10/31/AI 时代，程序员的能力栈正在怎么变？/"/>
+
+
+
+
+
+  <title>AI 时代，程序员的能力栈正在怎么变？ | kai_wei的资源基地</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a9b04e2267a5082db4d9518e7b37a34e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">kai_wei的资源基地</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">一个什么都有的资源大杂烩（当然，还在施工）</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            所有文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-digest">
+          <a href="/digest/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            精选档案
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://kai-wei-kfuse.github.io/2026/10/31/AI%20%E6%97%B6%E4%BB%A3%EF%BC%8C%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%83%BD%E5%8A%9B%E6%A0%88%E6%AD%A3%E5%9C%A8%E6%80%8E%E4%B9%88%E5%8F%98%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kai_wei的资源基地">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">AI 时代，程序员的能力栈正在怎么变？</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2026-10-31T12:00:00+08:00">
+                2026-10-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AI-%E8%83%BD%E5%8A%9B%E6%A0%88/" itemprop="url" rel="index">
+                    <span itemprop="name">AI 能力栈</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2026/10/31/AI%20%E6%97%B6%E4%BB%A3%EF%BC%8C%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%83%BD%E5%8A%9B%E6%A0%88%E6%AD%A3%E5%9C%A8%E6%80%8E%E4%B9%88%E5%8F%98%EF%BC%9F/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2026/10/31/AI%20%E6%97%B6%E4%BB%A3%EF%BC%8C%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%83%BD%E5%8A%9B%E6%A0%88%E6%AD%A3%E5%9C%A8%E6%80%8E%E4%B9%88%E5%8F%98%EF%BC%9F/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>阅读量
+            </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span id="busuanzi_value_page_pv"></span>次阅读
+          
+
+
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>AI 已经不满足于「辅助写代码」了。2023 年 GitHub 称其用户中 46% 的代码由 Copilot 生成；2026 年 4 月，Google 的 CEO 宣布公司全部新代码的 75% 出自 AI——一年半前这个数字还只有 25%，涨得整齐得让人起疑，但方向已无人怀疑。Stack Overflow 2025 年的开发者调查显示，84% 的开发者用上了 AI，其中 51% 每天在用。</p>
+<p>所以真正值得聊的不再是「用不用」，而是：当「把代码写出来」这件事本身快速贬值，程序员的能力栈里，什么在保值，什么在蒸发？</p>
+<p>先亮结论：<strong>品味与判断力、行动主体性、验证与系统功底，这三样在保值；而市面上热炒的「AI 技能」，大半是暂态的泡沫。</strong>下面拆开说。</p>
+<h2 id="一、「AI-技能」这个词，一半是泡沫"><a href="#一、「AI-技能」这个词，一半是泡沫" class="headerlink" title="一、「AI 技能」这个词，一半是泡沫"></a>一、「AI 技能」这个词，一半是泡沫</h2><p>十月底 Lobsters 上一篇题为《「AI 技能」在 2026 年一文不值》的博文把话说得很直白：那些如果能行得通、就能让你更快拿到好结果的与模型协作的方法，终将被折叠回产品里，打包封装，几个月后成为默认体验。prompt engineering 的兴衰就是前车之鉴。评论区一位用户补了更狠的一刀：AI 公司完全可以把「AI 技能」直接集成进模型——所以它只有两种宿命，要么小众到 AI 公司注意不到，要么被吸收进权重。</p>
+<p>这个词本身也可疑。那篇帖子获赞最高的评论不是反驳作者，而是澄清歧义：作者说的「AI skills」是「人使用 AI 的技能」，而相当一部分读者以为在说给 agent 用的 SKILL.md 文件。有位评论者感叹：当行话劫持了常用词，把话写清楚都变难了。一个连从业者之间都对不齐所指的词，被写进招聘要求时含多少水分，可想而知。</p>
+<p>还有一个反直觉的观察：<strong>开销与能力几乎无关，甚至负相关。</strong>讨论里有人说，自己有同事每个月在 AI 上烧两万多美元；而一位真正有本事的开发者回应，他认识的靠谱开发者 AI 花费大多相当低——要花到那个数，唯一的路子就是「放任 agent 蜂群乱撞一气，并且铁了心不让任何人看一眼代码」。</p>
+<p>但泡沫之下有真东西，只是它们大多不新鲜：</p>
+<ul>
+<li>一位资深博主列出的「如今需要的技能」——了解模型与 harness 的现状、知道模型的极限在哪、怎么给模型配工具、成本估算——他自己也承认，其中很大部分「归根结底就是通用的软件工程功底」。</li>
+<li>另一条高赞评论说得更透：使用这些工具的核心技能，和你手写代码时需要的是同一种——理解需求、想清楚解法形态、验证产出是否贴合意图。所谓「铺垫工作」（上下文工程、工具链配置），本质仍是系统工程。</li>
+<li>在早期创业公司做前沿模型集成的工程师则指出：通常所说的「AI 技能」，其实是「哪些问题用这类方案解决得了、哪些解决不了」的经验，加上对业务的了解，然后盯出下一个值得自动化的东西。</li>
+</ul>
+<p>我的判断：把「AI 技能」当独立资产去投资——背咒语、囤教程——大概率会亏，因为这类资产折旧极快；把它当成老手艺在新界面上的重新表达，才值得投入。</p>
+<h2 id="二、在保值的三样东西"><a href="#二、在保值的三样东西" class="headerlink" title="二、在保值的三样东西"></a>二、在保值的三样东西</h2><p><strong>其一，品味与判断力。</strong>哈佛公共卫生学院的一篇随笔把这件事讲得很清楚：收集证据、比较选项正在变成自动化任务，但「什么算恰当、负责、明智」的这部分决策，仍然取决于人。直觉是「在能说清之前就感知到模式」，品味是「对什么合适的体感」，判断力则是把两者汇拢起来做出决策与行动。危险之处在于：经验训练噪声的能力不亚于训练信号——我们很容易把「前后一致」误当成「正确」。AI 把反馈速度拉到极致，也让错误模式的固化更快，所以判断力需要刻意练习：记决策日志，复盘时专门写下「说不清原因但感觉不对」的时刻，学会区分直觉（身体捕捉到的模式）与焦虑（心智围绕它编造的故事）。</p>
+<p>Stack Overflow 博客那篇《匠人与建造者》从另一个方向印证了同一件事：写作领域已经演过一遍——AI 早期人人都写得出通顺文章，等读者对三段式和破折号审美疲劳之后，写作重新变回手艺，比拼的是讲出打动人的故事。软件大概率不会落后太久。价值正在从「生成」转移到「选择」：知道该造什么、为什么造。造原型和交付「能扩展到数百万人并把数据托付给它的银行平台」，从来是两码事。</p>
+<p><strong>其二，行动主体性（agency）。</strong>当执行的成本暴跌，「决定做什么」和「把事情推动到落地」就成了新瓶颈。前最高法院出庭律师、职业扑克选手 Cate Hall 把 agency 定义为「让事情发生的坚定意志」，并且坚信它可学。她的方法朴素得近乎可疑：找到真正的优势——那些你愿意做而别人不愿做、往往因为烦人或不舒服的事；主动去要那些感觉「不合理」的东西，以校准自己关于合理的直觉；主动索取真实反馈（不做菜不尝味道）；以及学会爱上「低地位护城河」——坦然跨过那段你确实做得很烂的时期。</p>
+<p>这条和招聘现场惊人地吻合。在 Reddit 那场关于初级培养的讨论里，一位工程管理者说，他要找的是「可以把一个高度模糊的问题直接扔给他、并相信他会主动扛起这个问题的人」。模糊问题，恰恰是 AI 最不擅长认领的。</p>
+<p><strong>其三，验证与系统功底。</strong>MIT 那份引发「95% 的组织没有从 GenAI 获得可衡量回报」讨论的报告，测过一个尖锐的问题：「这项任务你会交给 AI 还是初级同事？」起草邮件这类简单任务，七成人选择交给 AI；而复杂的长期任务，愿意交给人的以 9:1 压倒。对关键业务工作，90% 的用户更愿意交给人类——分界线不是智能，而是记忆、适应力，以及「谁为结果负责、谁验证结果」。谁来验证？目前仍然只能是懂行的人。</p>
+<h2 id="三、初级与资深：同一场地震，两种震感"><a href="#三、初级与资深：同一场地震，两种震感" class="headerlink" title="三、初级与资深：同一场地震，两种震感"></a>三、初级与资深：同一场地震，两种震感</h2><p>对资深工程师，AI 是一次身份重估。他们的匠艺更值钱了（见上一节），但连最资深的实践者也被打了个措手不及：有博主坦言，最新一代模型已经「连架构也会替你想」，把他从「凡署名的代码必亲自评审」的立场上震了下来。资深者的新身份，不是「写代码最快的人」，而是「决定造什么、并为产出签字的人」——能讲清每一行代码为什么存在（不管它出自谁手），像评审人类同事一样评审 agent 的产出。有评论者把这条线画得很干脆：这就是 AI 时代 vibe coder 与软件工程师的分野。</p>
+<p>对初级工程师，问题要严峻得多：<strong>传统的练级模型正在断裂。</strong>过去初级靠脚手架式的常规任务攒手感、逐级晋升，而现在这类任务「由资深工程师亲自调度 AI 反而快得多」。更糟的场景也有人实拍：PM 为了快交付把活儿派给初级，任由他们拿 AI 猛冲，初级什么都没学到，PM 还觉得他们是飞速产出的小天才。</p>
+<p>替代路径在讨论里已现雏形：先写设计文档再动手，哪怕任务不大；给一些不写代码的任务，把「解决问题的引擎」热起来；代码评审重点看性能和架构；在 PR 里附上验证步骤和方案可用的证据，否则拦下发布；练沟通，学会用影响力说话——这条高赞清单最后补了一句：「以上都不需要 AI。」另一位大型组织负责人的清单也类似：读代码重于写代码，保住 CS 基础功，架构能力，理解产品，TDD 与规格驱动，以及「最后 20% 的开发功力」。</p>
+<p>不过我想给这场讨论泼一点冷水：初级困境并非 AI 独有。有评论者指出，早在 2023 年，公司就因为「多花一点钱能招个中级」而不爱招初级了——培养体系先死，AI 只是让账更难算。我同意这个 nuance，并且认为它指向一个更诚实的结论：初级的问题是结构性的（企业短视、任务自动化、反馈回路缺失三事叠加），不是个人「学不学 AI」能解决的。但恰恰因此，个人层面的应对反而清晰：<strong>把被 AI 掠走的重复练习，换成它替代不了的练习。</strong>「只会用 AI 的人升不到 Senior」这句流行话说得太满，真正的问题不是 AI 有毒，而是拿 AI 冲量的人失去了刻意练习的反馈回路——没尝过自己写的烂代码疼是什么滋味的人，长不出评审 AI 的手感。</p>
+<h2 id="四、结语：生成越便宜，筛选越贵"><a href="#四、结语：生成越便宜，筛选越贵" class="headerlink" title="四、结语：生成越便宜，筛选越贵"></a>四、结语：生成越便宜，筛选越贵</h2><p>哈佛那篇随笔的收尾类比我很喜欢：不必拒绝「认知器械」，但必须在判断、直觉、品味上保持抗阻训练，否则肌肉会退化。</p>
+<p>把全文收拢成一句话：<strong>能力栈没有消失，只是重心整体上移——从「把代码写出来」上移到「决定写什么、判断写得好不好、把事情推动到落地」。</strong>生成侧的每一分贬值，都转化为筛选侧的一分溢价。而这三样保值资产——品味与判断力、行动主体性、验证与系统功底——没有一样能在教程里速成，也恰好没有一样能被折叠进模型。这是坏消息里最好的部分。</p>
+<h2 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a>延伸阅读</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://lobste.rs/s/x1s5oq/ai_skills_are_worthless_in_2026">「AI 技能」在 2026 年一文不值（Lobsters 讨论）</a>——prompt 技巧为何注定被产品吸收，评论区激辩比原文还精彩。</li>
+<li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/ExperiencedDevs/comments/1tsaw3x/ai_disrupting_the_path_to_seniority/">AI 正在打断通往资深的路径（r&#x2F;ExperiencedDevs）</a>——一位工程管理者抛出的初级培养危机，替代路径方案都藏在评论里。</li>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.blog/2026/05/28/artisans-and-builders">在 AI 世界里，最有价值的开发者将既是工匠又是建造者（Stack Overflow Blog）</a>——拒绝「匠人 vs 建造者」的二元对立，讲清品味为何成了新门槛。</li>
+<li><a target="_blank" rel="noopener" href="https://usefulfictions.substack.com/p/how-to-be-more-agentic">如何更有行动主体性（Cate Hall）</a>——agency 不是天赋而是可练的能力，方法朴素到可疑地有效。</li>
+<li><a target="_blank" rel="noopener" href="https://hsph.harvard.edu/news/essay-intuition-and-taste-in-the-age-of-ai">随笔：AI 时代的直觉与品味（哈佛公共卫生学院）</a>——用健身类比讲判断力的刻意练习，本文「保值资产」一节的主要底稿。</li>
+<li><a target="_blank" rel="noopener" href="https://www.pi.inc/docs/356103613275648">生成式 AI 分水岭：2025 商业 AI 现状报告（MIT Project NANDA）</a>——「95% 试点无回报」的原始出处，数字比二手转述克制得多。</li>
+</ul>
+<p>以上文章均出自本站「精选档案」的归档。目前那里已收录 279 篇同类精选，每篇都做了摘要与要点提炼——如果这篇合你口味，强烈建议去 <a href="/digest/">&#x2F;digest&#x2F;</a> 把整柜宝藏翻一遍。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>赞助一下作者啦</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt=" 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt=" 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+<!-- 本文标题 -->
+  <li>
+    <strong>本文标题： </strong>
+    AI 时代，程序员的能力栈正在怎么变？
+  </li>
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    kai_wei凯惟
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://kai-wei-kfuse.github.io/2026/10/31/AI%20%E6%97%B6%E4%BB%A3%EF%BC%8C%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%83%BD%E5%8A%9B%E6%A0%88%E6%AD%A3%E5%9C%A8%E6%80%8E%E4%B9%88%E5%8F%98%EF%BC%9F/" title="AI 时代，程序员的能力栈正在怎么变？">https://kai-wei-kfuse.github.io/2026/10/31/AI%20%E6%97%B6%E4%BB%A3%EF%BC%8C%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%83%BD%E5%8A%9B%E6%A0%88%E6%AD%A3%E5%9C%A8%E6%80%8E%E4%B9%88%E5%8F%98%EF%BC%9F/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/AI/" rel="tag"># AI</a>
+          
+            <a href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" rel="tag"># 程序员</a>
+          
+            <a href="/tags/AI%E7%BC%96%E7%A8%8B/" rel="tag"># AI编程</a>
+          
+            <a href="/tags/%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95/" rel="tag"># 职业发展</a>
+          
+            <a href="/tags/%E5%88%A4%E6%96%AD%E5%8A%9B/" rel="tag"># 判断力</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2026/10/31/%E5%9C%A8%20AI%20%E6%97%B6%E4%BB%A3%E5%AD%A6%E4%BC%9A%E5%AD%A6%E4%B9%A0%EF%BC%9A%E9%97%B4%E9%9A%94%E9%87%8D%E5%A4%8D%E3%80%81%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0%E4%B8%8E%E5%85%AC%E5%BC%80%E5%AD%A6%E4%B9%A0/" rel="next" title="在 AI 时代学会学习：间隔重复、刻意练习与公开学习">
+                <i class="fa fa-chevron-left"></i> 在 AI 时代学会学习：间隔重复、刻意练习与公开学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2026/10/31/3D%20%E6%89%93%E5%8D%B0%E5%86%9C%E5%9C%BA%EF%BC%9A%E6%8A%8A%E6%89%93%E5%8D%B0%E6%9C%BA%E5%8F%98%E6%88%90%E5%8D%B0%E9%92%9E%E6%9C%BA%E9%9D%A0%E8%B0%B1%E5%90%97%EF%BC%9F/" rel="prev" title="3D 打印农场：把打印机变成印钞机靠谱吗？">
+                3D 打印农场：把打印机变成印钞机靠谱吗？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/head.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7Carchive">
+              
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">文章数</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://paxton-pkj.github.io/" title="Paxton的小破站" target="_blank">Paxton的小破站</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://space.bilibili.com/403228491" title="魔方测评" target="_blank">魔方测评</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E3%80%8CAI-%E6%8A%80%E8%83%BD%E3%80%8D%E8%BF%99%E4%B8%AA%E8%AF%8D%EF%BC%8C%E4%B8%80%E5%8D%8A%E6%98%AF%E6%B3%A1%E6%B2%AB"><span class="nav-number">1.</span> <span class="nav-text">一、「AI 技能」这个词，一半是泡沫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%9C%A8%E4%BF%9D%E5%80%BC%E7%9A%84%E4%B8%89%E6%A0%B7%E4%B8%9C%E8%A5%BF"><span class="nav-number">2.</span> <span class="nav-text">二、在保值的三样东西</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%88%9D%E7%BA%A7%E4%B8%8E%E8%B5%84%E6%B7%B1%EF%BC%9A%E5%90%8C%E4%B8%80%E5%9C%BA%E5%9C%B0%E9%9C%87%EF%BC%8C%E4%B8%A4%E7%A7%8D%E9%9C%87%E6%84%9F"><span class="nav-number">3.</span> <span class="nav-text">三、初级与资深：同一场地震，两种震感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E7%BB%93%E8%AF%AD%EF%BC%9A%E7%94%9F%E6%88%90%E8%B6%8A%E4%BE%BF%E5%AE%9C%EF%BC%8C%E7%AD%9B%E9%80%89%E8%B6%8A%E8%B4%B5"><span class="nav-number">4.</span> <span class="nav-text">四、结语：生成越便宜，筛选越贵</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%B6%E4%BC%B8%E9%98%85%E8%AF%BB"><span class="nav-number">5.</span> <span class="nav-text">延伸阅读</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script
+  async
+  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kai_wei凯惟</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '592hdCuIJsWgXG1SXdy2uPOK-gzGzoHsz',
+        appKey: 'X4YGxj86pDjyg5tcIKSI0yMk',
+        placeholder: '说点什么.....',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <template id="live2d-deferred"><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/ Relative)","tagMode":true,"log":false,"model":{"jsonPath":"/live2d_models/shizuku/shizuku.model.json"},"display":{"position":"left","width":100,"height":180},"mobile":{"show":false},"react":{"opacityDefault":0.7}});</script></template>
+  <script>
+    (function () {
+      var tpl = document.getElementById('live2d-deferred');
+      if (!tpl || !tpl.content) return;
+      var srcScript = tpl.content.querySelector('script[src]');
+      var initScript = tpl.content.querySelector('script:not([src])');
+      if (!srcScript) return;
+      var initCode = initScript ? initScript.textContent : '';
+      var mobileShow = /"mobile"\s*:\s*\{\s*"show"\s*:\s*true/.test(initCode);
+      // 与 NexT.utils.isMobile 相同的判定：窄屏 + 移动端 UA。
+      var isMobile = (window.screen && window.screen.width < 767 &&
+        /mobile|android|iphone|ipod/i.test(navigator.userAgent));
+      if (isMobile && !mobileShow) return; // 移动端关闭：不注入、不请求任何 live2d 资源
+      var loaded = false;
+      function loadLive2d() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.src = srcScript.getAttribute('src');
+        s.onload = function () {
+          var init = document.createElement('script');
+          init.textContent = initCode;
+          document.body.appendChild(init);
+        };
+        document.body.appendChild(s);
+      }
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(loadLive2d, { timeout: 3000 });
+      } else {
+        window.setTimeout(loadLive2d, 3000);
+      }
+      window.addEventListener('scroll', loadLive2d, { passive: true });
+    })();
+  </script>
+  
+</body>
+</html>

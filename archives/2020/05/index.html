@@ -320,7 +320,7 @@
         
           
         
-        嗯..! 目前共计 12 篇日志。 继续努力。
+        嗯..! 目前共计 15 篇日志。 继续努力。
       </span>
 
       
@@ -422,7 +422,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">文章数</span>
                 </a>
               </div>
@@ -433,7 +433,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -444,7 +444,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -1080,5 +1080,44 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/ Relative)","tagMode":false,"log":false,"model":{"jsonPath":"live2d-widget-model-shizuku"},"display":{"position":"left","width":100,"height":180},"mobile":{"show":false},"react":{"opacityDefault":0.7}});</script></body>
+
+  
+  
+  <template id="live2d-deferred"><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/ Relative)","tagMode":true,"log":false,"model":{"jsonPath":"/live2d_models/shizuku/shizuku.model.json"},"display":{"position":"left","width":100,"height":180},"mobile":{"show":false},"react":{"opacityDefault":0.7}});</script></template>
+  <script>
+    (function () {
+      var tpl = document.getElementById('live2d-deferred');
+      if (!tpl || !tpl.content) return;
+      var srcScript = tpl.content.querySelector('script[src]');
+      var initScript = tpl.content.querySelector('script:not([src])');
+      if (!srcScript) return;
+      var initCode = initScript ? initScript.textContent : '';
+      var mobileShow = /"mobile"\s*:\s*\{\s*"show"\s*:\s*true/.test(initCode);
+      // 与 NexT.utils.isMobile 相同的判定：窄屏 + 移动端 UA。
+      var isMobile = (window.screen && window.screen.width < 767 &&
+        /mobile|android|iphone|ipod/i.test(navigator.userAgent));
+      if (isMobile && !mobileShow) return; // 移动端关闭：不注入、不请求任何 live2d 资源
+      var loaded = false;
+      function loadLive2d() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.src = srcScript.getAttribute('src');
+        s.onload = function () {
+          var init = document.createElement('script');
+          init.textContent = initCode;
+          document.body.appendChild(init);
+        };
+        document.body.appendChild(s);
+      }
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(loadLive2d, { timeout: 3000 });
+      } else {
+        window.setTimeout(loadLive2d, 3000);
+      }
+      window.addEventListener('scroll', loadLive2d, { passive: true });
+    })();
+  </script>
+  
+</body>
 </html>
