@@ -22,52 +22,12 @@
       </tags>
   </entry>
   <entry>
-    <title>3D 打印农场：把打印机变成印钞机靠谱吗？</title>
-    <url>/2026/10/31/3D%20%E6%89%93%E5%8D%B0%E5%86%9C%E5%9C%BA%EF%BC%9A%E6%8A%8A%E6%89%93%E5%8D%B0%E6%9C%BA%E5%8F%98%E6%88%90%E5%8D%B0%E9%92%9E%E6%9C%BA%E9%9D%A0%E8%B0%B1%E5%90%97%EF%BC%9F/</url>
-    <content><![CDATA[<p>「十台打印机，月入五万」——如果你刷到过这类短视频，大概对「3D 打印农场」这个词不陌生。它听上去近乎完美：设备自动运转，睡觉也在产出，把打印机变成印钞机。这门生意真实存在，国内外都有人做成了规模。但把几个成功的农场解剖开看，你会发现它更像一门精益制造业，而不是躺赚的被动收入。这篇文章用两个真实案例、一组市场数据和一份设备评测，给想入行的你一个冷静的成本&#x2F;收益框架。</p>
-<h2 id="农场是什么，风有多大"><a href="#农场是什么，风有多大" class="headerlink" title="农场是什么，风有多大"></a>农场是什么，风有多大</h2><p>打印农场，指的是把一排排联网打印机集中起来、不间断运转的生产机构，规模通常从十台到几百台不等。据 Hardware FYI 整理的行情，中国已经出现运行约 5,000 台以上打印机的超大型农场（大部分是拓竹机型），据称很快将扩展到一万台。一笔最近的订单是 4 万件桌面小摆件，要求一周之内打印并发货——按每台打印机每 3 小时跑满一板 4 件估算，5,000 台机器一天能产出约 16 万件。</p>
-<p>需求的另一面，是设备市场正在放量。据市场情报公司 Context 的数据，2025 年第四季度全球入门级 3D 打印机出货量同比暴涨 47%，全年增长 26%；拓竹（Bambu Lab）超越长期领跑的创想三维，登顶全球最畅销的入门级品牌，在美国 2,500 美元以下细分市场占 37% 的份额。据 AM Research 估算，整个 3D 打印市场 2025 年规模约 160 亿美元，同比增长约 10%。换句话说：设备越便宜、越好用，开农场的门槛看起来越低——这正是各路「印钞机」叙事的土壤。</p>
-<h2 id="两个真实样本：一个靠精益，一个靠模式"><a href="#两个真实样本：一个靠精益，一个靠模式" class="headerlink" title="两个真实样本：一个靠精益，一个靠模式"></a>两个真实样本：一个靠精益，一个靠模式</h2><p><strong>样本一：i-SOLIDS，美国最大的打印农场之一。</strong> 创始人 Kason 2015 年把 3D 打印当业余爱好，2016 年作为副业创立公司，2017 年底把打印机从家里搬进仓库、转成全职。第一年（2018 年）很艰难，但做出了约 18 万美元营收、20% 的利润率；此后保持年均 120% 的增长，并且直到 2025 年都不靠外部融资、纯有机扩张。如今 i-SOLIDS 运营 140 多台打印机（FDM、光固化树脂、粉末基都有），2025 年 7 月搬进约 2 万平方英尺（逾 1,800 平方米）的新场地，可容纳 400 多台 FDM；按零件复杂度不同，日产量超过 2,000 件，客户覆盖汽车、航空航天、医疗健康和消费品，其中不乏用 Ultem、PEEK 这类先进材料打的工业件。</p>
-<p>最值得细看的不是规模，而是运营效率：全公司 25–30 名员工，而这间 FDM 农场只需 3 名专职人员，就能全天候管理整个机队——素材里的标题就叫「3 个人管 140 台打印机」。靠的是定制软件追踪每一台机器的生产情况、全程无纸化流程，以及像 64 台服役超六年的 Creator Pro 这样的耐用主力机。Kason 给创业者的话很直白：许多人只看到成功的果实，却看不到背后的系统性流程和日复一日的严苛执行；从小做起，把质量和客户反馈放在首位，构建强健稳定的供应链。</p>
-<p>（需要提醒：这篇案例出自 Flashforge 企业博客，i-SOLIDS 是其长期客户，具体数字应当作宣传口径看待，但管理逻辑本身是可信的。）</p>
-<p><strong>样本二：Slant 3D，把农场做成「制造云」。</strong> 这家美国公司刚完成 150 万美元 A 轮融资，已建成可容纳最多 3,000 台打印机的设施，还计划增设更多农场站点，其中一座新厂预计设在肯塔基州路易斯维尔。它的核心产品 Teleport 按需打印：免费软件把你的电商店铺直接接入其工厂（去年还推出了 Shopify 插件），店铺出了订单它才打印，并直接寄给最终用户——商品卖出之前，你一分钱都不用花。CEO Gabe Bentz 的说法是：「我们正在建造一座『货架直接生产产品』的仓库。」这个模式的关键不在打印机多，而在把库存风险从卖家身上拿掉了——对想靠 3D 打印做电商但不想囤机器的人，这是一条现成的路径。</p>
-<h2 id="设备账：花更多的钱，可能买得更少"><a href="#设备账：花更多的钱，可能买得更少" class="headerlink" title="设备账：花更多的钱，可能买得更少"></a>设备账：花更多的钱，可能买得更少</h2><p>农场的第一笔账是设备。评测媒体 FauxHammer 对拓竹 H2 系列三台机器的对比很有参考价值——H2S（单喷嘴）、H2D（双喷嘴）、H2C（双喷嘴+自动换喷嘴的 Vortex 系统），结论是「花更多的钱，反而可能买得更少」：</p>
-<ul>
-<li><strong>H2S</strong>：成型体积 340×320×340mm，是全系列最干净直观的，没有任何喷嘴可达性折损；在单色任务里也是三台中最快的。对农场里跑单色、单材料的批量件来说，这种「大而简单」的主力机逻辑最对口。</li>
-<li><strong>H2D</strong>：标称 350mm 宽，但单喷嘴实际可用 325mm、双喷嘴场景实际只有 300mm；换来的是真正的双材料能力，比如一个喷嘴打 PLA、另一个打专用支撑材料，接触面干净得多。</li>
-<li><strong>H2C</strong>：标称体积反而是三台中最小的（330mm 宽），开箱默认五种材料；想上七色，还得加买两个 Vortex 喷嘴和至少再加一台 AMS，而且它只以搭配 AMS 2 Pro 的 combo 形式出售，单色任务还比 H2S 略慢。</li>
-</ul>
-<p>对农场的启示很具体：<strong>多色不是免费的</strong>——单喷嘴换色的机型换色又慢、废料又多，而废料就是真金白银；为了「万一用得上」去买更贵更复杂的特化机型，很可能同时损失速度和可用幅面。按你绝大多数订单的形态选机，而不是按想象中的订单选机。</p>
-<h2 id="冷静的框架：三笔账和一个前提"><a href="#冷静的框架：三笔账和一个前提" class="headerlink" title="冷静的框架：三笔账和一个前提"></a>冷静的框架：三笔账和一个前提</h2><p>综合这些素材，想入行的人真正要算的是三笔账：</p>
-<p><strong>第一笔，订单账（最重要）。</strong> 你是先有订单，还是先有机器？i-SOLIDS 是从替换零件、礼品和原型这类小额零散订单起步，逐步打进企业级客户的；Slant 3D 干脆把「接单」本身做成了产品。反例同样刺眼——Hardware FYI 引用一位农场运营者的话：「企业不再下单打印，而是渐渐开始自购 3D 打印机、在内部生产零件。这些决策背后的账，对我们毫不留情。到最后，把 3D 打印外包给我们这件事干脆失去了意义——就是不赚钱了。对他们如此，对我们亦然。」设备越普及，「代打印」这个环节的价值就被压得越薄。没有稳定订单来源就铺机器，等于先买货架再找货。</p>
-<p><strong>第二笔，设备账。</strong> 打印机不是一次性资产，更像快速折旧的耗材。素材里提到一个扎心的动向：几年前建起来的农场，如今已经开始过时——老机器在与新一代打印机（同样主要来自拓竹）的竞争中步履维艰。而据 Context 数据，2025 年中国厂商已占全球入门级出货量的 90% 以上，这个价格段的迭代速度只会更快。买设备时要想清楚一个问题：它三年后还打不打得过新机？</p>
-<p><strong>第三笔，运营账。</strong> i-SOLIDS 的「3 人管 140 台」不是靠省出来的，是靠自动化流程挣出来的。农场的隐性成本大头往往不是电费和耗材，而是人盯机器的时间。你的软件能不能监控每一台机器？断料、废件、后处理怎么流转？这些问题的答案，决定了你是「农场主」还是「高级看机员」。</p>
-<p>而一个前提是：这门生意的本质是精益制造业，利润是算出来的，不是打印机送来的。i-SOLIDS 从第一年起就把盈利能力置于营收规模之上，年均 120% 的增长建立在 20% 的利润率之上，而不是靠融资烧规模。如果你的模型需要「先亏两年、跑马圈地」，这个行当大概率不欢迎你。</p>
-<h2 id="结论：不是印钞机，是一门精益制造业"><a href="#结论：不是印钞机，是一门精益制造业" class="headerlink" title="结论：不是印钞机，是一门精益制造业"></a>结论：不是印钞机，是一门精益制造业</h2><p>把打印机变成印钞机？打印机更像是印钞机里的「纸」——它只是生产环节，钞票来自订单、流程和运营。这个行当确实在变大：出货量在涨、设备越来越强、超大规模农场已经出现；但另一面同样真实：客户在自购设备、老农场在过时、代打印的单价在被压薄。想入行，记住四条：从小做起、先有订单、按真实订单形态选机、把自动化当成核心投资。这四条做得到，它是一门辛苦但真实的制造业生意；做不到，它就是一堆会快速折旧的塑料玩具。</p>
-<h2 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a>延伸阅读</h2><ul>
-<li><a href="https://hardwarefyi.substack.com/p/3d-printing-farms-reborn">3D 打印农场，重生（Hardware FYI）</a>：成本曲线、5,000 台超大型农场，以及「客户自购设备」的行业拐点。</li>
-<li><a href="https://enterprise.flashforge.com/blogs/blog-1/flashforge-anchor-one-of-americas-largest-3d-print-farms">Flashforge Anchor：美国最大 3D 打印农场之一（Flashforge 企业博客）</a>：i-SOLIDS 从副业到 140 台机队的完整路径。</li>
-<li><a href="https://www.tctmagazine.com/slant-3d-set-to-launch-additional-3d-printing-farms-after-ra">Slant 3D 融得 150 万美元 A 轮后，将增设更多 3D 打印农场（TCT Magazine）</a>：「货架直接生产产品」的按需制造模式。</li>
-<li><a href="https://www.tomshardware.com/3d-printing/bambu-lab-overtakes-creality-as-the-worlds-top-selling-budget-3d-printer-brand">拓竹超越创想三维，登顶全球最畅销平价 3D 打印机品牌（Tom’s Hardware）</a>：2025 年市场格局与出货量数据。</li>
-<li><a href="https://www.fauxhammer.com/reviews/bambu-h2s-vs-h2d-vs-h2c-review-why-spending-more-can-actually-get-you-less">拓竹 H2S&#x2F;H2D&#x2F;H2C 对比评测：花更多钱反而买得更少（FauxHammer）</a>：设备选型的取舍拆解。</li>
-</ul>
-<p>以上就是本文引用的全部素材。如果你还想读更多这类行业观察，欢迎去本站「精选档案」（<a href="/digest/">&#x2F;digest&#x2F;</a>）逛逛——那里归档了全部 279 篇精选科技资讯，本文的原始出处也在其中。</p>
-]]></content>
-      <categories>
-        <category>3D打印观察</category>
-      </categories>
-      <tags>
-        <tag>3D打印</tag>
-        <tag>打印农场</tag>
-        <tag>拓竹</tag>
-        <tag>Flashforge</tag>
-        <tag>副业创业</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AI 时代，程序员的能力栈正在怎么变？</title>
     <url>/2026/10/31/AI%20%E6%97%B6%E4%BB%A3%EF%BC%8C%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%83%BD%E5%8A%9B%E6%A0%88%E6%AD%A3%E5%9C%A8%E6%80%8E%E4%B9%88%E5%8F%98%EF%BC%9F/</url>
-    <content><![CDATA[<p>AI 已经不满足于「辅助写代码」了。2023 年 GitHub 称其用户中 46% 的代码由 Copilot 生成；2026 年 4 月，Google 的 CEO 宣布公司全部新代码的 75% 出自 AI——一年半前这个数字还只有 25%，涨得整齐得让人起疑，但方向已无人怀疑。Stack Overflow 2025 年的开发者调查显示，84% 的开发者用上了 AI，其中 51% 每天在用。</p>
+    <content><![CDATA[<blockquote>
+<p><strong>【编译综述 · 非原创】</strong> 本文由本站基于下列外文文章编译整理并综述而成，非独立原创；文中数据与论点均出自来源原文，<strong>版权归原作者所有</strong>，编译如有不准确之处请以原文为准。若原作者不希望被引用，请通过博客联系方式告知，我们将及时处理。<br><strong>主要来源</strong>：<a href="https://lobste.rs/s/x1s5oq/ai_skills_are_worthless_in_2026">「AI 技能」在 2026 年一文不值（Lobsters）</a>／<a href="https://stackoverflow.blog/2026/05/28/artisans-and-builders">Artisans and Builders（Stack Overflow Blog）</a>／<a href="https://usefulfictions.substack.com/p/how-to-be-more-agentic">How to be more agentic（Cate Hall）</a>／<a href="https://hsph.harvard.edu/news/essay-intuition-and-taste-in-the-age-of-ai">AI 时代的直觉与品味（Harvard Chan School）</a>／<a href="https://www.reddit.com/r/ExperiencedDevs/comments/1tsaw3x/ai_disrupting_the_path_to_seniority/">AI 正在打断通往资深的路径（r&#x2F;ExperiencedDevs）</a>／<a href="https://www.pi.inc/docs/356103613275648">生成式 AI 分水岭报告（MIT Project NANDA）</a></p>
+</blockquote>
+<p>AI 已经不满足于「辅助写代码」了。2023 年 GitHub 称其用户中 46% 的代码由 Copilot 生成；2026 年 4 月，Google 的 CEO 宣布公司全部新代码的 75% 出自 AI——一年半前这个数字还只有 25%，涨得整齐得让人起疑，但方向已无人怀疑。Stack Overflow 2025 年的开发者调查显示，84% 的开发者用上了 AI，其中 51% 每天在用。</p>
 <p>所以真正值得聊的不再是「用不用」，而是：当「把代码写出来」这件事本身快速贬值，程序员的能力栈里，什么在保值，什么在蒸发？</p>
 <p>先亮结论：<strong>品味与判断力、行动主体性、验证与系统功底，这三样在保值；而市面上热炒的「AI 技能」，大半是暂态的泡沫。</strong>下面拆开说。</p>
 <h2 id="一、「AI-技能」这个词，一半是泡沫"><a href="#一、「AI-技能」这个词，一半是泡沫" class="headerlink" title="一、「AI 技能」这个词，一半是泡沫"></a>一、「AI 技能」这个词，一半是泡沫</h2><p>十月底 Lobsters 上一篇题为《「AI 技能」在 2026 年一文不值》的博文把话说得很直白：那些如果能行得通、就能让你更快拿到好结果的与模型协作的方法，终将被折叠回产品里，打包封装，几个月后成为默认体验。prompt engineering 的兴衰就是前车之鉴。评论区一位用户补了更狠的一刀：AI 公司完全可以把「AI 技能」直接集成进模型——所以它只有两种宿命，要么小众到 AI 公司注意不到，要么被吸收进权重。</p>
@@ -151,15 +111,49 @@
 ]]></content>
   </entry>
   <entry>
-    <title>泰拉瑞亚原版全流程攻略</title>
-    <url>/2020/04/05/first-text/</url>
-    <content><![CDATA[<p>废话：《泰拉瑞亚》是由Re-Logic公司开发的一款高自由度的沙盒游戏，于2011年5月16日在PC上发行。<br>攻略开始：<br>正在开发…<br>正在开发..<br>正在开发…<br>正在开发….<br>正在开发…</p>
+    <title>3D 打印农场：把打印机变成印钞机靠谱吗？</title>
+    <url>/2026/10/31/3D%20%E6%89%93%E5%8D%B0%E5%86%9C%E5%9C%BA%EF%BC%9A%E6%8A%8A%E6%89%93%E5%8D%B0%E6%9C%BA%E5%8F%98%E6%88%90%E5%8D%B0%E9%92%9E%E6%9C%BA%E9%9D%A0%E8%B0%B1%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[<blockquote>
+<p><strong>【编译综述 · 非原创】</strong> 本文由本站基于下列外文文章编译整理并综述而成，非独立原创；文中数据与论点均出自来源原文，<strong>版权归原作者所有</strong>，编译如有不准确之处请以原文为准。若原作者不希望被引用，请通过博客联系方式告知，我们将及时处理。<br><strong>主要来源</strong>：<a href="https://hardwarefyi.substack.com/p/3d-printing-farms-reborn">3D 打印农场，重生（Hardware FYI）</a>／<a href="https://enterprise.flashforge.com/blogs/blog-1/flashforge-anchor-one-of-americas-largest-3d-print-farms">Flashforge Anchor：美国最大 3D 打印农场之一（Flashforge）</a>／<a href="https://www.tctmagazine.com/slant-3d-set-to-launch-additional-3d-printing-farms-after-ra">Slant 3D 融资扩张（TCT Magazine）</a>／<a href="https://www.tomshardware.com/3d-printing/bambu-lab-overtakes-creality-as-the-worlds-top-selling-budget-3d-printer-brand">拓竹超越创想登顶（Tom’s Hardware）</a>／<a href="https://www.fauxhammer.com/reviews/bambu-h2s-vs-h2d-vs-h2c-review-why-spending-more-can-actually-get-you-less">拓竹 H2S&#x2F;H2D&#x2F;H2C 对比评测（FauxHammer）</a></p>
+</blockquote>
+<p>「十台打印机，月入五万」——如果你刷到过这类短视频，大概对「3D 打印农场」这个词不陌生。它听上去近乎完美：设备自动运转，睡觉也在产出，把打印机变成印钞机。这门生意真实存在，国内外都有人做成了规模。但把几个成功的农场解剖开看，你会发现它更像一门精益制造业，而不是躺赚的被动收入。这篇文章用两个真实案例、一组市场数据和一份设备评测，给想入行的你一个冷静的成本&#x2F;收益框架。</p>
+<h2 id="农场是什么，风有多大"><a href="#农场是什么，风有多大" class="headerlink" title="农场是什么，风有多大"></a>农场是什么，风有多大</h2><p>打印农场，指的是把一排排联网打印机集中起来、不间断运转的生产机构，规模通常从十台到几百台不等。据 Hardware FYI 整理的行情，中国已经出现运行约 5,000 台以上打印机的超大型农场（大部分是拓竹机型），据称很快将扩展到一万台。一笔最近的订单是 4 万件桌面小摆件，要求一周之内打印并发货——按每台打印机每 3 小时跑满一板 4 件估算，5,000 台机器一天能产出约 16 万件。</p>
+<p>需求的另一面，是设备市场正在放量。据市场情报公司 Context 的数据，2025 年第四季度全球入门级 3D 打印机出货量同比暴涨 47%，全年增长 26%；拓竹（Bambu Lab）超越长期领跑的创想三维，登顶全球最畅销的入门级品牌，在美国 2,500 美元以下细分市场占 37% 的份额。据 AM Research 估算，整个 3D 打印市场 2025 年规模约 160 亿美元，同比增长约 10%。换句话说：设备越便宜、越好用，开农场的门槛看起来越低——这正是各路「印钞机」叙事的土壤。</p>
+<h2 id="两个真实样本：一个靠精益，一个靠模式"><a href="#两个真实样本：一个靠精益，一个靠模式" class="headerlink" title="两个真实样本：一个靠精益，一个靠模式"></a>两个真实样本：一个靠精益，一个靠模式</h2><p><strong>样本一：i-SOLIDS，美国最大的打印农场之一。</strong> 创始人 Kason 2015 年把 3D 打印当业余爱好，2016 年作为副业创立公司，2017 年底把打印机从家里搬进仓库、转成全职。第一年（2018 年）很艰难，但做出了约 18 万美元营收、20% 的利润率；此后保持年均 120% 的增长，并且直到 2025 年都不靠外部融资、纯有机扩张。如今 i-SOLIDS 运营 140 多台打印机（FDM、光固化树脂、粉末基都有），2025 年 7 月搬进约 2 万平方英尺（逾 1,800 平方米）的新场地，可容纳 400 多台 FDM；按零件复杂度不同，日产量超过 2,000 件，客户覆盖汽车、航空航天、医疗健康和消费品，其中不乏用 Ultem、PEEK 这类先进材料打的工业件。</p>
+<p>最值得细看的不是规模，而是运营效率：全公司 25–30 名员工，而这间 FDM 农场只需 3 名专职人员，就能全天候管理整个机队——素材里的标题就叫「3 个人管 140 台打印机」。靠的是定制软件追踪每一台机器的生产情况、全程无纸化流程，以及像 64 台服役超六年的 Creator Pro 这样的耐用主力机。Kason 给创业者的话很直白：许多人只看到成功的果实，却看不到背后的系统性流程和日复一日的严苛执行；从小做起，把质量和客户反馈放在首位，构建强健稳定的供应链。</p>
+<p>（需要提醒：这篇案例出自 Flashforge 企业博客，i-SOLIDS 是其长期客户，具体数字应当作宣传口径看待，但管理逻辑本身是可信的。）</p>
+<p><strong>样本二：Slant 3D，把农场做成「制造云」。</strong> 这家美国公司刚完成 150 万美元 A 轮融资，已建成可容纳最多 3,000 台打印机的设施，还计划增设更多农场站点，其中一座新厂预计设在肯塔基州路易斯维尔。它的核心产品 Teleport 按需打印：免费软件把你的电商店铺直接接入其工厂（去年还推出了 Shopify 插件），店铺出了订单它才打印，并直接寄给最终用户——商品卖出之前，你一分钱都不用花。CEO Gabe Bentz 的说法是：「我们正在建造一座『货架直接生产产品』的仓库。」这个模式的关键不在打印机多，而在把库存风险从卖家身上拿掉了——对想靠 3D 打印做电商但不想囤机器的人，这是一条现成的路径。</p>
+<h2 id="设备账：花更多的钱，可能买得更少"><a href="#设备账：花更多的钱，可能买得更少" class="headerlink" title="设备账：花更多的钱，可能买得更少"></a>设备账：花更多的钱，可能买得更少</h2><p>农场的第一笔账是设备。评测媒体 FauxHammer 对拓竹 H2 系列三台机器的对比很有参考价值——H2S（单喷嘴）、H2D（双喷嘴）、H2C（双喷嘴+自动换喷嘴的 Vortex 系统），结论是「花更多的钱，反而可能买得更少」：</p>
+<ul>
+<li><strong>H2S</strong>：成型体积 340×320×340mm，是全系列最干净直观的，没有任何喷嘴可达性折损；在单色任务里也是三台中最快的。对农场里跑单色、单材料的批量件来说，这种「大而简单」的主力机逻辑最对口。</li>
+<li><strong>H2D</strong>：标称 350mm 宽，但单喷嘴实际可用 325mm、双喷嘴场景实际只有 300mm；换来的是真正的双材料能力，比如一个喷嘴打 PLA、另一个打专用支撑材料，接触面干净得多。</li>
+<li><strong>H2C</strong>：标称体积反而是三台中最小的（330mm 宽），开箱默认五种材料；想上七色，还得加买两个 Vortex 喷嘴和至少再加一台 AMS，而且它只以搭配 AMS 2 Pro 的 combo 形式出售，单色任务还比 H2S 略慢。</li>
+</ul>
+<p>对农场的启示很具体：<strong>多色不是免费的</strong>——单喷嘴换色的机型换色又慢、废料又多，而废料就是真金白银；为了「万一用得上」去买更贵更复杂的特化机型，很可能同时损失速度和可用幅面。按你绝大多数订单的形态选机，而不是按想象中的订单选机。</p>
+<h2 id="冷静的框架：三笔账和一个前提"><a href="#冷静的框架：三笔账和一个前提" class="headerlink" title="冷静的框架：三笔账和一个前提"></a>冷静的框架：三笔账和一个前提</h2><p>综合这些素材，想入行的人真正要算的是三笔账：</p>
+<p><strong>第一笔，订单账（最重要）。</strong> 你是先有订单，还是先有机器？i-SOLIDS 是从替换零件、礼品和原型这类小额零散订单起步，逐步打进企业级客户的；Slant 3D 干脆把「接单」本身做成了产品。反例同样刺眼——Hardware FYI 引用一位农场运营者的话：「企业不再下单打印，而是渐渐开始自购 3D 打印机、在内部生产零件。这些决策背后的账，对我们毫不留情。到最后，把 3D 打印外包给我们这件事干脆失去了意义——就是不赚钱了。对他们如此，对我们亦然。」设备越普及，「代打印」这个环节的价值就被压得越薄。没有稳定订单来源就铺机器，等于先买货架再找货。</p>
+<p><strong>第二笔，设备账。</strong> 打印机不是一次性资产，更像快速折旧的耗材。素材里提到一个扎心的动向：几年前建起来的农场，如今已经开始过时——老机器在与新一代打印机（同样主要来自拓竹）的竞争中步履维艰。而据 Context 数据，2025 年中国厂商已占全球入门级出货量的 90% 以上，这个价格段的迭代速度只会更快。买设备时要想清楚一个问题：它三年后还打不打得过新机？</p>
+<p><strong>第三笔，运营账。</strong> i-SOLIDS 的「3 人管 140 台」不是靠省出来的，是靠自动化流程挣出来的。农场的隐性成本大头往往不是电费和耗材，而是人盯机器的时间。你的软件能不能监控每一台机器？断料、废件、后处理怎么流转？这些问题的答案，决定了你是「农场主」还是「高级看机员」。</p>
+<p>而一个前提是：这门生意的本质是精益制造业，利润是算出来的，不是打印机送来的。i-SOLIDS 从第一年起就把盈利能力置于营收规模之上，年均 120% 的增长建立在 20% 的利润率之上，而不是靠融资烧规模。如果你的模型需要「先亏两年、跑马圈地」，这个行当大概率不欢迎你。</p>
+<h2 id="结论：不是印钞机，是一门精益制造业"><a href="#结论：不是印钞机，是一门精益制造业" class="headerlink" title="结论：不是印钞机，是一门精益制造业"></a>结论：不是印钞机，是一门精益制造业</h2><p>把打印机变成印钞机？打印机更像是印钞机里的「纸」——它只是生产环节，钞票来自订单、流程和运营。这个行当确实在变大：出货量在涨、设备越来越强、超大规模农场已经出现；但另一面同样真实：客户在自购设备、老农场在过时、代打印的单价在被压薄。想入行，记住四条：从小做起、先有订单、按真实订单形态选机、把自动化当成核心投资。这四条做得到，它是一门辛苦但真实的制造业生意；做不到，它就是一堆会快速折旧的塑料玩具。</p>
+<h2 id="延伸阅读"><a href="#延伸阅读" class="headerlink" title="延伸阅读"></a>延伸阅读</h2><ul>
+<li><a href="https://hardwarefyi.substack.com/p/3d-printing-farms-reborn">3D 打印农场，重生（Hardware FYI）</a>：成本曲线、5,000 台超大型农场，以及「客户自购设备」的行业拐点。</li>
+<li><a href="https://enterprise.flashforge.com/blogs/blog-1/flashforge-anchor-one-of-americas-largest-3d-print-farms">Flashforge Anchor：美国最大 3D 打印农场之一（Flashforge 企业博客）</a>：i-SOLIDS 从副业到 140 台机队的完整路径。</li>
+<li><a href="https://www.tctmagazine.com/slant-3d-set-to-launch-additional-3d-printing-farms-after-ra">Slant 3D 融得 150 万美元 A 轮后，将增设更多 3D 打印农场（TCT Magazine）</a>：「货架直接生产产品」的按需制造模式。</li>
+<li><a href="https://www.tomshardware.com/3d-printing/bambu-lab-overtakes-creality-as-the-worlds-top-selling-budget-3d-printer-brand">拓竹超越创想三维，登顶全球最畅销平价 3D 打印机品牌（Tom’s Hardware）</a>：2025 年市场格局与出货量数据。</li>
+<li><a href="https://www.fauxhammer.com/reviews/bambu-h2s-vs-h2d-vs-h2c-review-why-spending-more-can-actually-get-you-less">拓竹 H2S&#x2F;H2D&#x2F;H2C 对比评测：花更多钱反而买得更少（FauxHammer）</a>：设备选型的取舍拆解。</li>
+</ul>
+<p>以上就是本文引用的全部素材。如果你还想读更多这类行业观察，欢迎去本站「精选档案」（<a href="/digest/">&#x2F;digest&#x2F;</a>）逛逛——那里归档了全部 279 篇精选科技资讯，本文的原始出处也在其中。</p>
 ]]></content>
       <categories>
-        <category>泰拉瑞亚</category>
+        <category>3D打印观察</category>
       </categories>
       <tags>
-        <tag>泰拉瑞亚</tag>
+        <tag>3D打印</tag>
+        <tag>打印农场</tag>
+        <tag>拓竹</tag>
+        <tag>Flashforge</tag>
+        <tag>副业创业</tag>
       </tags>
   </entry>
   <entry>
@@ -193,6 +187,18 @@
 ]]></content>
       <tags>
         <tag>软件应用</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>泰拉瑞亚原版全流程攻略</title>
+    <url>/2020/04/05/first-text/</url>
+    <content><![CDATA[<p>废话：《泰拉瑞亚》是由Re-Logic公司开发的一款高自由度的沙盒游戏，于2011年5月16日在PC上发行。<br>攻略开始：<br>正在开发…<br>正在开发..<br>正在开发…<br>正在开发….<br>正在开发…</p>
+]]></content>
+      <categories>
+        <category>泰拉瑞亚</category>
+      </categories>
+      <tags>
+        <tag>泰拉瑞亚</tag>
       </tags>
   </entry>
   <entry>
@@ -275,7 +281,10 @@
   <entry>
     <title>在 AI 时代学会学习：间隔重复、刻意练习与公开学习</title>
     <url>/2026/10/31/%E5%9C%A8%20AI%20%E6%97%B6%E4%BB%A3%E5%AD%A6%E4%BC%9A%E5%AD%A6%E4%B9%A0%EF%BC%9A%E9%97%B4%E9%9A%94%E9%87%8D%E5%A4%8D%E3%80%81%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0%E4%B8%8E%E5%85%AC%E5%BC%80%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>「AI 都能替你写了，还学它干什么？」这句话我最近听过好几次。Scott Young——畅销书《Ultralearning》的作者——在重审自己旧作时给过一个冷静的回答：AI 并没有从根本上改变学习所需付出的努力；全世界的知识早已触手可及，可大多数人还是更愿意去看搞笑视频。互联网当年没有让自学者井喷，AI 大概也不会。真正被改变的从来不是「要不要下功夫」，而是功夫往哪里下。这篇文章综合几篇被反复引用的经典方法论文献——Gwern 的间隔重复综述、Andy Matuschak 的写提示指南、James Clear 的刻意练习指南、swyx 的《Learn In Public》——再加上 Scott Young 本人对 AI 时代学习原则的重审，讲三件经受住验证的事，最后给出一份可以直接照做的清单。</p>
+    <content><![CDATA[<blockquote>
+<p><strong>【编译综述 · 非原创】</strong> 本文由本站基于下列外文文章编译整理并综述而成，非独立原创；文中数据与论点均出自来源原文，<strong>版权归原作者所有</strong>，编译如有不准确之处请以原文为准。若原作者不希望被引用，请通过博客联系方式告知，我们将及时处理。<br><strong>主要来源</strong>：<a href="https://andymatuschak.org/prompts">How to write good prompts（Andy Matuschak）</a>／<a href="https://gwern.net/spaced-repetition">Spaced Repetition for Efficient Learning（Gwern）</a>／<a href="https://www.scotthyoung.com/blog/2026/04/29/ultralearning-ai">I Wrote Ultralearning. This is What I’d Change Because of AI（Scott H. Young）</a>／<a href="https://swyx.io/learn-in-public">Learn In Public（swyx）</a>／<a href="https://jamesclear.com/beginners-guide-deliberate-practice">The Beginner’s Guide to Deliberate Practice（James Clear）</a></p>
+</blockquote>
+<p>「AI 都能替你写了，还学它干什么？」这句话我最近听过好几次。Scott Young——畅销书《Ultralearning》的作者——在重审自己旧作时给过一个冷静的回答：AI 并没有从根本上改变学习所需付出的努力；全世界的知识早已触手可及，可大多数人还是更愿意去看搞笑视频。互联网当年没有让自学者井喷，AI 大概也不会。真正被改变的从来不是「要不要下功夫」，而是功夫往哪里下。这篇文章综合几篇被反复引用的经典方法论文献——Gwern 的间隔重复综述、Andy Matuschak 的写提示指南、James Clear 的刻意练习指南、swyx 的《Learn In Public》——再加上 Scott Young 本人对 AI 时代学习原则的重审，讲三件经受住验证的事，最后给出一份可以直接照做的清单。</p>
 <h2 id="一、间隔重复：把「记住」变成一种选择"><a href="#一、间隔重复：把「记住」变成一种选择" class="headerlink" title="一、间隔重复：把「记住」变成一种选择"></a>一、间隔重复：把「记住」变成一种选择</h2><p>先说最反直觉的事实：你对「怎么学有效」的直觉，多半是错的。Kornell 在 2009 年针对 GRE 词汇的实验发现，对 90% 的参与者而言间隔复习都比集中突击更有效，但学习结束后，72% 的参与者却相信突击更好。Gwern 在综述里解释了突击为何依然流行：它的好处当场兑现——考前一晚无所不知；代价一个月后才结算——忘得一干二净。这是一笔理性但短视的交易。</p>
 <p>而证据站在间隔这一边。认知心理学中的「测试效应」表明，主动从记忆里回想远比反复重读高效：学斯瓦希里语词汇的实验里，接受过测试的学生一周后记住约 80%，只学不测的只记住约 35%。Donovan 与 Radosevich 的元分析给出间隔效应量 d&#x3D;0.42——接受分散训练的普通人，记得比约 67% 的集中训练者要好。Bahrick 的研究把时间尺度拉到八年：同样练习七到八次的西班牙语词汇，间隔 30 天的那组八年后还记得 15%，集中练完的只剩 6%；要想达到 56 天间隔一次的效果，每 14 天练一次得付出两倍的练习量。</p>
 <p>剩下的问题只是执行。最佳复习时机是「你快要忘掉它的那一刻」，麻烦恰恰在于：既然快忘了，你怎么会记得去复习？把调度交给软件，这个悖论才解开——Anki 这类系统反复问同一个问题，间隔逐次拉长。Jeopardy! 冠军 Roger Craig 创下的多项纪录，部分归功于用 Anki 记住了节目 20 多万道历史题里的大量片段；医学生则靠数千张卡片撑起整个课程。Michael Nielsen 的说法最能概括这一切：间隔重复让「记忆成为一种选择」。</p>
@@ -320,6 +329,23 @@
         <tag>刻意练习</tag>
         <tag>公开学习</tag>
         <tag>学习方法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CF 300C - Beautiful Numbers 数论</title>
+    <url>/2022/02/23/%E6%95%B0%E8%AE%BA/</url>
+    <content><![CDATA[<p>(广东工业大学 ACM寒假集训 专题四 C）<br>题目链接：<a href="https://vjudge.net/contest/479577#problem/C">CF 300C - Beautiful Numbers</a><br>洛谷链接：<a href="https://www.luogu.com.cn/problem/CF300C">CF 300C - Beautiful Numbers</a><br>更好的阅读体验请到这里</p>
+<p>题目描述（洛谷翻译）：<br><strong>题意翻译</strong><br>Vitaly有一些奇怪的癖好，比如他特别爱两个小于10的数字a和b。Vitaly定义十进制表示下每一位都是a或b的数为“好数”，一个每一位数加起来为“好数”的“好数”被称为“极好的数”。</p>
+<p>举个栗子&#x3D;w&#x3D;，如果偏爱数字为1和3，那么1212不是“好数”，13和311是“好数”，111是“极好的数”。</p>
+<p>现在Vitaly想知道，长度为n（长度不包括前导0）的“极好的数”有多少个。对1e9+7取模。<br><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://img-blog.csdnimg.cn/2e7a375d296749608b133689daf26841.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h2 id="读题"><a href="#读题" class="headerlink" title="读题"></a>读题</h2><p>1、有两个数字a，b。<br>2、“好数”是只由a,b构成的长度为n的数。<br>3、”好数”中每一位之和也是”好数”的数，叫“极好的数”。<br>4、题目要我们找“极好的数”（以下简称极好数）。<br>5、答案取模1e9+7，为质数。</p>
+<p><strong>总体思路：</strong><br>因为我们找的<strong>极好数</strong>来自<strong>好数</strong>，那么我们只要<strong>枚举</strong>长度为n的所有好数，判断是不是每一位之和为好数，是的话说明是极好数，结果累加起来就可以了。<br><strong>如何枚举：</strong><br>一个一个数枚举是不可能的，有1000000位数呢….但是仔细想一下，数的长度是固定为n的，且只有a,b，那么我们是不是就可以枚举a的数量i，那么b的数量一定是n-i，这时候这么多个a和b组成的数就相当于i个a去放n个空位(组合数),所以就是C（n,i）（n在下，i在上）。<br><strong>如何求这个组合数：</strong><br>简单，运用组合数公式：<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://img-blog.csdnimg.cn/8ad137e3434949adb01a3a20a4822f90.png" alt="在这里插入图片描述"><br><strong>答案怎么求，如何求mod：</strong><br>我们不是求出来之后才取模。</p>
+<p><strong>分析：</strong><br>每个答案是一个组合数，但是组合数是一个分式，因为太大了，我们不能求出阶乘后再除下面的阶乘，我们要除数取模。<br>（a&#x2F;b）mod p ≠(a mod p&#x2F; b mod p)mod p<br>这里我们要用费马小定理求逆元：<br>$$<br>\frac{n!}{i!(n-i)!}<br>$$<br>由公式可知，我们要求 <code>i!</code> 和<code>(n-i)!</code>的逆元，让他变成乘法来取模。因为p是质数，所以可以用费马小定理，用快速幂求逆元。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span><span class="comment">//组合数，费马小定理，快速幂,逆元</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">long</span> <span class="type">long</span> mod=<span class="number">1e9</span><span class="number">+7</span>;</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> fact[<span class="number">1000005</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> a,b,n,ans=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">good</span><span class="params">(<span class="type">long</span> <span class="type">long</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(x)&#123;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> tmp=x%<span class="number">10</span>;</span><br><span class="line">        <span class="keyword">if</span>(tmp!=a &amp;&amp; tmp!=b)<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        x/=<span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">fastpow</span><span class="params">(<span class="type">long</span> <span class="type">long</span> f,<span class="type">long</span> <span class="type">long</span> p)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p==<span class="number">0</span>)<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> res=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>)res=res*f%mod;</span><br><span class="line">        f=f*f%mod;<span class="comment">//反正每次模就行，不要让他超longlong</span></span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;a&gt;&gt;b&gt;&gt;n;</span><br><span class="line">    fact[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)fact[i]=fact[i<span class="number">-1</span>]*i%mod;<span class="comment">//打表，每次取模</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">good</span>(a*i+b*(n-i)))&#123;</span><br><span class="line">            <span class="type">long</span> <span class="type">long</span> tmp1=<span class="built_in">fastpow</span>(fact[i],mod<span class="number">-2</span>)%mod;<span class="comment">//费马小定理求逆元</span></span><br><span class="line">            <span class="type">long</span> <span class="type">long</span> tmp2=<span class="built_in">fastpow</span>(fact[n-i],mod<span class="number">-2</span>)%mod;<span class="comment">//求完就取模</span></span><br><span class="line">            ans+=fact[n]*tmp1%mod*tmp2%mod;<span class="comment">//因为n!已经取过模了，所以是后面两个取</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>,ans%mod);<span class="comment">//这里模不模都可以</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>好像也讲的不清楚….</p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -406,23 +432,6 @@
 ]]></content>
       <tags>
         <tag>c语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CF 300C - Beautiful Numbers 数论</title>
-    <url>/2022/02/23/%E6%95%B0%E8%AE%BA/</url>
-    <content><![CDATA[<p>(广东工业大学 ACM寒假集训 专题四 C）<br>题目链接：<a href="https://vjudge.net/contest/479577#problem/C">CF 300C - Beautiful Numbers</a><br>洛谷链接：<a href="https://www.luogu.com.cn/problem/CF300C">CF 300C - Beautiful Numbers</a><br>更好的阅读体验请到这里</p>
-<p>题目描述（洛谷翻译）：<br><strong>题意翻译</strong><br>Vitaly有一些奇怪的癖好，比如他特别爱两个小于10的数字a和b。Vitaly定义十进制表示下每一位都是a或b的数为“好数”，一个每一位数加起来为“好数”的“好数”被称为“极好的数”。</p>
-<p>举个栗子&#x3D;w&#x3D;，如果偏爱数字为1和3，那么1212不是“好数”，13和311是“好数”，111是“极好的数”。</p>
-<p>现在Vitaly想知道，长度为n（长度不包括前导0）的“极好的数”有多少个。对1e9+7取模。<br><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://img-blog.csdnimg.cn/2e7a375d296749608b133689daf26841.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
-<h2 id="读题"><a href="#读题" class="headerlink" title="读题"></a>读题</h2><p>1、有两个数字a，b。<br>2、“好数”是只由a,b构成的长度为n的数。<br>3、”好数”中每一位之和也是”好数”的数，叫“极好的数”。<br>4、题目要我们找“极好的数”（以下简称极好数）。<br>5、答案取模1e9+7，为质数。</p>
-<p><strong>总体思路：</strong><br>因为我们找的<strong>极好数</strong>来自<strong>好数</strong>，那么我们只要<strong>枚举</strong>长度为n的所有好数，判断是不是每一位之和为好数，是的话说明是极好数，结果累加起来就可以了。<br><strong>如何枚举：</strong><br>一个一个数枚举是不可能的，有1000000位数呢….但是仔细想一下，数的长度是固定为n的，且只有a,b，那么我们是不是就可以枚举a的数量i，那么b的数量一定是n-i，这时候这么多个a和b组成的数就相当于i个a去放n个空位(组合数),所以就是C（n,i）（n在下，i在上）。<br><strong>如何求这个组合数：</strong><br>简单，运用组合数公式：<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original="https://img-blog.csdnimg.cn/8ad137e3434949adb01a3a20a4822f90.png" alt="在这里插入图片描述"><br><strong>答案怎么求，如何求mod：</strong><br>我们不是求出来之后才取模。</p>
-<p><strong>分析：</strong><br>每个答案是一个组合数，但是组合数是一个分式，因为太大了，我们不能求出阶乘后再除下面的阶乘，我们要除数取模。<br>（a&#x2F;b）mod p ≠(a mod p&#x2F; b mod p)mod p<br>这里我们要用费马小定理求逆元：<br>$$<br>\frac{n!}{i!(n-i)!}<br>$$<br>由公式可知，我们要求 <code>i!</code> 和<code>(n-i)!</code>的逆元，让他变成乘法来取模。因为p是质数，所以可以用费马小定理，用快速幂求逆元。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span><span class="comment">//组合数，费马小定理，快速幂,逆元</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">long</span> <span class="type">long</span> mod=<span class="number">1e9</span><span class="number">+7</span>;</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> fact[<span class="number">1000005</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> a,b,n,ans=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">good</span><span class="params">(<span class="type">long</span> <span class="type">long</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(x)&#123;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> tmp=x%<span class="number">10</span>;</span><br><span class="line">        <span class="keyword">if</span>(tmp!=a &amp;&amp; tmp!=b)<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        x/=<span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">fastpow</span><span class="params">(<span class="type">long</span> <span class="type">long</span> f,<span class="type">long</span> <span class="type">long</span> p)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p==<span class="number">0</span>)<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> res=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>)res=res*f%mod;</span><br><span class="line">        f=f*f%mod;<span class="comment">//反正每次模就行，不要让他超longlong</span></span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;a&gt;&gt;b&gt;&gt;n;</span><br><span class="line">    fact[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)fact[i]=fact[i<span class="number">-1</span>]*i%mod;<span class="comment">//打表，每次取模</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">good</span>(a*i+b*(n-i)))&#123;</span><br><span class="line">            <span class="type">long</span> <span class="type">long</span> tmp1=<span class="built_in">fastpow</span>(fact[i],mod<span class="number">-2</span>)%mod;<span class="comment">//费马小定理求逆元</span></span><br><span class="line">            <span class="type">long</span> <span class="type">long</span> tmp2=<span class="built_in">fastpow</span>(fact[n-i],mod<span class="number">-2</span>)%mod;<span class="comment">//求完就取模</span></span><br><span class="line">            ans+=fact[n]*tmp1%mod*tmp2%mod;<span class="comment">//因为n!已经取过模了，所以是后面两个取</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>,ans%mod);<span class="comment">//这里模不模都可以</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>好像也讲的不清楚….</p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
