@@ -91,6 +91,7 @@
 <meta property="og:url" content="https://kai-wei-kfuse.github.io/2022/02/23/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/index.html">
 <meta property="og:site_name" content="kai_wei的资源基地">
 <meta property="og:description" content="（广东工业大学ACM专题学习一） 滑动窗口滑动窗口算法（也叫尺取）的概念其实很简单，很多情况下要结合更多知识来解题，比如单调队列。什么是滑动窗口：在计算机网络中，滑动窗口算法是用来改善吞吐量的技术。在算法中则是维护一个由左右指针在字符串或数组中构成的窗口（窗口大小可变或固定），在窗口中进行的操作。 单调队列也叫双端队列，简单来说就是通过不段入队和出队，保证队列元素是单调的。 专题学习一 滑动窗口下">
+<meta property="og:locale">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/d9d8c4f6adf8414493f7f5909cbe0fcc.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/44174261be1e4105b6a02beccac10e8b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/fef359e97d8d48b2b1de81ceaad1eb89.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16">
@@ -107,7 +108,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
@@ -156,7 +157,7 @@
 
 
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -250,6 +251,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-digest">
+          <a href="/digest/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            精选档案
+          </a>
+        </li>
+      
 
       
         <li class="menu-item menu-item-search">
@@ -321,7 +332,7 @@
     <link itemprop="mainEntityOfPage" href="https://kai-wei-kfuse.github.io/2022/02/23/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="kai_wei凯惟">
+      <meta itemprop="name" content="">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
@@ -423,7 +434,7 @@
 <p>所以我们只知道<strong>滑动窗口</strong>是不足够的，这里我们还需要学习<strong>单调队列</strong>来解决。</p>
 <p>(我们先看找最小值)<br>        维护一个<strong>单调队列</strong>，这个队列的<strong>性质</strong>是从队头到队尾元素一定是递增的同时遍历数组，队列中的元素在数组中的下标一定是<strong>单调递增</strong>的（因为每次都从队尾进去），而<strong>队头</strong>就是最小元素。<br>        每遍历一个元素就让他和队尾判断；如果这个元素比队尾元素大，说明如果元素入队队列依然可以保持单调；如果这个元素比队尾小，也就是说如果这个元素入队了，队列就不单调了，这里我们就要踢出队尾元素（换个说法：按照找最值的思维，如果队尾元素比加入元素还大，那么这个队尾元素就完全没有成为最小值的潜力了），同时，不要别忘记窗口大小是有限的，如果队头元素下标和队尾元素下标之差大于窗口大小，就要踢出队头元素。<br>        接下来我们模拟一下样例。（队列以数组元素为元素，也可以下标为元素，这里不讲）<br><img src="https://img-blog.csdnimg.cn/44174261be1e4105b6a02beccac10e8b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="红色"><br><strong>注意</strong>：图中红色X就是被踢除的元素。<br><strong>注意</strong>：我们要等到i遍历到k（也就是窗口大小），才开始输出。<br>如图：<br>①遍历元素1，1入队，没有元素出队。<br>②遍历元素3，3大于队尾1，3入队，没有元素出队。<br>③遍历元素-1，-1小于队尾3，3出队，再次判断，-1小于新队尾1，1出队，-1入队。<br>④遍历元素-3，-3小于队尾-1，-1出队，-3入队。<br>⑤遍历元素5，5大于-3,5入队，没有元素出队。<br>以此类推，遍历到3时，3小于5，5出队，再次判断，3大于-3，3入队。<br>这个过程维护了一个单调的队列，但还不够。<img src="https://img-blog.csdnimg.cn/fef359e97d8d48b2b1de81ceaad1eb89.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="请添加图片描述"></p>
 <p>我们看最后一行，如果按照上面的判断，6可以进队，但是认真看看样例，窗口大小是3，-3到6已结溢出窗口了，所以我们每次判断都要加一个窗口长度的维护。<br>新建一个队列，每次元素进队的同时，下标也进队。<img src="https://img-blog.csdnimg.cn/e5fcd307f6f04addaf7045a5073aa207.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAa2FpX3dlaV8=,size_20,color_FFFFFF,t_70,g_se,x_16" alt="请添加图片描述"><br>这时候添加一个操作<br>①遍历元素1，1入队，(<strong>队头和队尾下标之差小于3</strong>)没有元素出队。<br>②遍历元素3，3大于队尾1，3入队，（<strong>队头和队尾下标之差小于3</strong>）没有元素出队。<br>③遍历元素-1，-1小于队尾3，3出队，再次判断，-1小于新队尾1，1出队，（<strong>队头和队尾下标之差小于3</strong>）-1入队。<br>④遍历元素-3，-3小于队尾-1，-1出队，-3入队（<strong>队头和队尾下标之差小于3</strong>）。<br>⑤遍历元素5，5大于-3,5入队，（<strong>队头和队尾下标之差小于3</strong>）没有元素出队。<br>以此类推，遍历到3时，3小于5，5出队，再次判断，3大于-3，3入队。<br>遍历到6,6入队，（<strong>队头和队尾下标之差等于3</strong>）踢出队头元素-3。<br>只要每次遍历都输出队头就能得到序列，最大值只要判断的时候换一个符号。<br>参考代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;//使用数组来模拟队列</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">1000002</span>];</span><br><span class="line"><span class="keyword">int</span> q[<span class="number">1000002</span>];</span><br><span class="line"><span class="keyword">int</span> x[<span class="number">1000002</span>];</span><br><span class="line"><span class="keyword">int</span> q1[<span class="number">1000002</span>];</span><br><span class="line"><span class="keyword">int</span> x1[<span class="number">1000002</span>];</span><br><span class="line"><span class="keyword">int</span> head=<span class="number">1</span>,tail=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,k;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;k;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;<span class="comment">//最小</span></span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; x[head]+k&lt;=i)head++;<span class="comment">//head右移代表踢出队头</span></span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; q[tail]&gt;a[i])tail--;<span class="comment">//tail左移代表踢出队尾</span></span><br><span class="line">        q[++tail]=a[i];<span class="comment">//队尾右移同时元素入队</span></span><br><span class="line">        x[tail]=i;</span><br><span class="line">        <span class="keyword">if</span>(i&gt;=k)<span class="built_in">printf</span>(<span class="string">"%d "</span>,q[head]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;<span class="comment">//最大</span></span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; x1[head]+k&lt;=i)head++;</span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; q1[tail]&lt;a[i])tail--;</span><br><span class="line">        q1[++tail]=a[i];</span><br><span class="line">        x1[tail]=i;</span><br><span class="line">        <span class="keyword">if</span>(i&gt;=k)<span class="built_in">printf</span>(<span class="string">"%d "</span>,q1[head]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span><span class="comment">//使用数组来模拟队列</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> a[<span class="number">1000002</span>];</span><br><span class="line"><span class="type">int</span> q[<span class="number">1000002</span>];</span><br><span class="line"><span class="type">int</span> x[<span class="number">1000002</span>];</span><br><span class="line"><span class="type">int</span> q1[<span class="number">1000002</span>];</span><br><span class="line"><span class="type">int</span> x1[<span class="number">1000002</span>];</span><br><span class="line"><span class="type">int</span> head=<span class="number">1</span>,tail=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,k;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;k;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;<span class="comment">//最小</span></span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; x[head]+k&lt;=i)head++;<span class="comment">//head右移代表踢出队头</span></span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; q[tail]&gt;a[i])tail--;<span class="comment">//tail左移代表踢出队尾</span></span><br><span class="line">        q[++tail]=a[i];<span class="comment">//队尾右移同时元素入队</span></span><br><span class="line">        x[tail]=i;</span><br><span class="line">        <span class="keyword">if</span>(i&gt;=k)<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,q[head]);</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;<span class="comment">//最大</span></span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; x1[head]+k&lt;=i)head++;</span><br><span class="line">        <span class="keyword">while</span>(head&lt;=tail &amp;&amp; q1[tail]&lt;a[i])tail--;</span><br><span class="line">        q1[++tail]=a[i];</span><br><span class="line">        x1[tail]=i;</span><br><span class="line">        <span class="keyword">if</span>(i&gt;=k)<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,q1[head]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -444,14 +455,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="kai_wei凯惟 微信支付"/>
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt=" 微信支付"/>
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.jpg" alt="kai_wei凯惟 支付宝"/>
+        <img id="alipay_qr" src="/images/alipay.jpg" alt=" 支付宝"/>
         <p>支付宝</p>
       </div>
     
@@ -585,9 +596,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/head.jpg"
-                alt="kai_wei凯惟" />
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">kai_wei凯惟</p>
+              <p class="site-author-name" itemprop="name"></p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -678,7 +689,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#滑动窗口"><span class="nav-number">1.</span> <span class="nav-text">滑动窗口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单调队列"><span class="nav-number">2.</span> <span class="nav-text">单调队列</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3"><span class="nav-number">1.</span> <span class="nav-text">滑动窗口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97"><span class="nav-number">2.</span> <span class="nav-text">单调队列</span></a></li></ol></div>
             
 
           </div>
@@ -703,7 +714,7 @@
   src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
 ></script>
 
-<div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

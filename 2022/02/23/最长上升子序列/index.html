@@ -91,6 +91,7 @@
 <meta property="og:url" content="https://kai-wei-kfuse.github.io/2022/02/23/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/index.html">
 <meta property="og:site_name" content="kai_wei的资源基地">
 <meta property="og:description" content="[NOIP1999 普及组] 导弹拦截题目描述某国为了防御敌国的导弹袭击，发展出一种导弹拦截系统。但是这种导弹拦截系统有一个缺陷：虽然它的第一发炮弹能够到达任意的高度，但是以后每一发炮弹都不能高于前一发的高度。某天，雷达捕捉到敌国的导弹来袭。由于该系统还在试用阶段，所以只有一套系统，因此有可能不能拦截所有的导弹。 输入导弹依次飞来的高度（雷达给出的高度数据是\le 50000≤50000的正整数）">
+<meta property="og:locale">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/9aba73ff2d5140b4b25f94a6f502b1ef.png">
 <meta property="article:published_time" content="2022-02-23T01:48:16.000Z">
 <meta property="article:modified_time" content="2022-02-23T01:49:28.909Z">
@@ -104,7 +105,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '',
     scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
@@ -153,7 +154,7 @@
 
 
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -247,6 +248,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-digest">
+          <a href="/digest/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            精选档案
+          </a>
+        </li>
+      
 
       
         <li class="menu-item menu-item-search">
@@ -318,7 +329,7 @@
     <link itemprop="mainEntityOfPage" href="https://kai-wei-kfuse.github.io/2022/02/23/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="kai_wei凯惟">
+      <meta itemprop="name" content="">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/head.jpg">
     </span>
@@ -412,7 +423,7 @@
 <p>输入输出样例<br><img src="https://img-blog.csdnimg.cn/9aba73ff2d5140b4b25f94a6f502b1ef.png" alt="在这里插入图片描述"><br>这里我们需要二分查找优化找子序列的过程，不过这道题变成了最长不上升子序列。<br>这个时候我们设dp[i]的意义为：<strong>长度为i的子序列中末尾的最大值，i相当于子序列的长度</strong>。可以想象一下，这个序列的最后一位如果数字越大，那么构成更长的不上升子序列的长度期望会更长。<br>比如：6 4 2 <strong>1</strong>和6 4 3 <strong>2</strong> 两个序列，末尾越大越有可能会构成更长的子序列。</p>
 <p>首先我们让<code>dp[1]=a[1]</code>，接着开始往后枚举，我们每枚举一个就要判断dp中最后一位(dp[len])和a[i]的大小，如果a[i]更小，那么它可以作为这个子序列的下一项，（这里我们用len）也就是<code>dp[++len]=a[i];</code>如果a[i]大于dp[len]，就要使用二分法找到dp序列中小于a[i]的第一位，然后替换，这里换成了比原来大的数。<br>比如：9 7 5 4 2 然后下一位是3，那么我们换掉比3小的第一位，也就是2，这时候，序列变成了9 7 5 4 3。</p>
 <p>以此类推，遍历到最后，dp的长度len就是最长不上升子序列的长度。<br>第二问的话，可能不好理解，因为如果有两枚导弹，第一枚先来，第二枚后来，而第一枚的高度比第二枚低，那么必须要两台才行，如果后面还有一枚导弹比第二枚导弹还要高，不就要三台了吗……以此类推。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> p[<span class="number">100010</span>];</span><br><span class="line"><span class="keyword">int</span> b[<span class="number">100010</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i=<span class="number">0</span>,len1=<span class="number">0</span>,ans;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[++i]));<span class="comment">//循环输入</span></span><br><span class="line">    <span class="keyword">int</span> n=i<span class="number">-1</span>;<span class="comment">//最后一次没有输入因此跳出循环，n=i-1</span></span><br><span class="line">    b[<span class="number">0</span>] = <span class="number">100000</span> ;</span><br><span class="line">    b[++len1]=a[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=b[len1])&#123;</span><br><span class="line">            b[++len1]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> l=<span class="number">0</span>,r=len1,mid;</span><br><span class="line">            <span class="keyword">while</span>(l&lt;=r)&#123;</span><br><span class="line">                mid=l+(r-l)/<span class="number">2</span>;</span><br><span class="line">                <span class="keyword">if</span>(a[i]&lt;=b[mid])&#123;</span><br><span class="line">                    ans=mid;</span><br><span class="line">                    l=mid+<span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> r=mid<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            b[ans+<span class="number">1</span>]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">/*for(int j=1;j&lt;=len1;j++)&#123;</span></span><br><span class="line"><span class="comment">                cout&lt;&lt;b[j]&lt;&lt;' ';</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            cout&lt;&lt;endl;*/</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;len1&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> m=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(m&lt;n)&#123;</span><br><span class="line">        <span class="keyword">int</span> last=<span class="number">10000000</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(a[j]&gt;<span class="number">0</span> &amp;&amp; a[j]&lt;=last)&#123;</span><br><span class="line">                m++;</span><br><span class="line">                last=a[j];</span><br><span class="line">                a[j]=<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sum++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> a[<span class="number">100010</span>];</span><br><span class="line"><span class="type">int</span> p[<span class="number">100010</span>];</span><br><span class="line"><span class="type">int</span> b[<span class="number">100010</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>,len1=<span class="number">0</span>,ans;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[++i]));<span class="comment">//循环输入</span></span><br><span class="line">    <span class="type">int</span> n=i<span class="number">-1</span>;<span class="comment">//最后一次没有输入因此跳出循环，n=i-1</span></span><br><span class="line">    b[<span class="number">0</span>] = <span class="number">100000</span> ;</span><br><span class="line">    b[++len1]=a[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=b[len1])&#123;</span><br><span class="line">            b[++len1]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> l=<span class="number">0</span>,r=len1,mid;</span><br><span class="line">            <span class="keyword">while</span>(l&lt;=r)&#123;</span><br><span class="line">                mid=l+(r-l)/<span class="number">2</span>;</span><br><span class="line">                <span class="keyword">if</span>(a[i]&lt;=b[mid])&#123;</span><br><span class="line">                    ans=mid;</span><br><span class="line">                    l=mid<span class="number">+1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> r=mid<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            b[ans<span class="number">+1</span>]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">/*for(int j=1;j&lt;=len1;j++)&#123;</span></span><br><span class="line"><span class="comment">                cout&lt;&lt;b[j]&lt;&lt;&#x27; &#x27;;</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            cout&lt;&lt;endl;*/</span></span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;len1&lt;&lt;endl;</span><br><span class="line">    <span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> m=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(m&lt;n)&#123;</span><br><span class="line">        <span class="type">int</span> last=<span class="number">10000000</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(a[j]&gt;<span class="number">0</span> &amp;&amp; a[j]&lt;=last)&#123;</span><br><span class="line">                m++;</span><br><span class="line">                last=a[j];</span><br><span class="line">                a[j]=<span class="number">-1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sum++;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -433,14 +444,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="kai_wei凯惟 微信支付"/>
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt=" 微信支付"/>
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.jpg" alt="kai_wei凯惟 支付宝"/>
+        <img id="alipay_qr" src="/images/alipay.jpg" alt=" 支付宝"/>
         <p>支付宝</p>
       </div>
     
@@ -569,9 +580,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/head.jpg"
-                alt="kai_wei凯惟" />
+                alt="" />
             
-              <p class="site-author-name" itemprop="name">kai_wei凯惟</p>
+              <p class="site-author-name" itemprop="name"></p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -671,7 +682,7 @@
   src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
 ></script>
 
-<div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2026</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
